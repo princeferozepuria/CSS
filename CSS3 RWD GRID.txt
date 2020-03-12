@@ -1,0 +1,176 @@
+GRID RESPONSIVE LAYOUT (RWD)
+____________________________________
+GRID MAIN CONTAINER AND FUNCTIONS
+display: grid;
+height: 100%;
+width: 100%;
+------------------------------------------------
+EXPLICIT GRID:-define grids items
+IMPLICIT GRID:-undefined grid items
+
+SOLUTION
+grid-auto-rows:150px;
+grid-auto-columns:150px;
+grid-auto-flow: dense; //fill empty cells automatically
+----------------------------------------------------------------------
+FUNCTIONS
+repeat(2,250px);                                          //repeat function(row count , row width)
+repeat(auto-fit,minmax(285px,285px));  //columns rows auto fit 
+repeat(auto-fit, minmax(100px, 1fr));     //columns
+
+min-content      // jo sabse bada word uske according height badegi
+max-content     // content badh jayega no line break 
+minmax()          // row ki height utni rahe jab content bade to height badh jaye
+                             grid-template-rows:repeat(2, minmax(150px , min-content));
+
+minmax(150px , 200px) //minimum width 150 le le maximum 200 se jyada ne le  
+
+auto-fit      //full fit properly grid cells . no extra track create
+auto-fill     // not fill properly grid cells ,extra track create 
+________________________________________
+ROWS AND COLUMNS HANDLE:-
+grid-template-rows: 80px 200px;  //SIMPLE GRID
+grid-template-columns: 1fr 20% auto 40px; 
+
+grid-template-rows: repeat(2,140px);  //repeat function(row count , row width) 
+grid-template-columns: repeat(3,1fr);  // 1fr means 1 fractional equal unit.
+
+grid-column-gap: 20px;
+grid-row-gap: 50px;
+grid-gap:50px 20px;  /*row column  Shorthand*/
+________________________________________
+GRID LINES  AND POSITIONIND AND SPANING 
+grid-column-start: 1;
+grid-column-end: 3;
+grid-column: 1 / 5;
+grid-column: 1 / span 5; //another use
+grid-column:1 / -1; //span ending point
+
+grid-row-start: 1;
+grid-row-end: 3;
+grid-row: 1 / 4; 
+grid-row:1 / -1; //span ending point
+
+grid-area: 1 / 2 / 5 / 6; // Position the items anywhere 
+ grid-area: 2 / 1 / span 2 / span 3;  //another use
+row-start / column-start / row-end / and column-end;
+_________________________________________________
+WHOLE GRID ALIGNMENT METHOD
+
+justify-content: space-evenly; // control whole grid horizontal 
+space-around;        // 2* space in
+space-between;   //  side by side space
+center;                // center in container
+start;                  // beginning  in container
+end;                   // end in container 
+
+align-content: space evenly ;      // control whole grid vertically align
+space-around;      // 2* space in 
+space-between; //  side by side space
+center;              // center in container
+start;                // beginning  in container
+end;                 // end in container 
+
+place-content:start center;  // vertical  horizontal
+--------------------------------------------------------------------------------------------------
+WHOLE GRID ITEMS ALIGNMENT METHOD AND SELF ALIGNMENT
+
+justify-items: stretch;         // control all grid  items horizontal 
+                     center;          // center in container
+                      start;          // beginning  in container
+                      end;          // end in container 
+
+align-items: stretch          // control all grid items vertical
+                      center;       // center in container
+                      start;        // beginning  in container
+                     end;         // end in container 
+
+place-items: center center; // vertical  horizontal
+______________________________________
+SINGLE SELF ALIGNMENT
+
+justify-self: stretch;         // control single grid  item horizontal 
+                     center;          // center in container
+                      start;          // beginning  in container
+                      end;          // end in container 
+
+align-self: stretch;         // control single grid  items horizontal 
+                     center;          // center in container
+                      start;          // beginning  in container
+                      end;          // end in container 
+
+place-self:center end;  // vertical  horizontal
+____________________________________________________________
+GRID AREA NAMES:-
+grid-template-areas: "title title title"
+                        "header header header"
+                        "content content sidebar"
+                        " content content sidebar" 
+                        "content content sidebar"
+                         "box1  box2  ." //want space/hiding use . operator works only side by side
+                         "footer footer footer";
+
+DEFINE GRID-AREA EVERY SINGLE DIV CONTAINER:-
+grid-area:title;
+grid-area:header;
+grid-area: content;
+grid-area: sidebar;
+grid-area: box1;
+grid-area: box1;
+grid-area: footer;
+__________________________________
+ORDER GRID- USE ONLY WITH  GRID ITEMS FOR RESPONSIVE LAYOUTS TO CHANGE ORDER
+.itemone{order:0} by default
+.itemtwo{order:2}
+.itemthree{order:4}
+.itemfour{order:3}
+______________________________________
+NESTED GRID
+.grid-container{
+display:grid}
+
+.grid-container .item1{
+display:grid
+ //some statements
+}
+_________________________________
+OVERLAPING GRID
+display:grid;
+grid-template-rows: repeat(2 , 150px);
+grid-template-columns:  repeat(2 , 150px);
+
+.item1{
+            grid-column:1 / span 2;
+            grid-row:1 / span 2;
+           align-self:start;
+           z-index:1;
+}
+.item2{
+            grid-column:1 / span 2;
+            grid-row:1 / span 2;
+           align-self:center;
+           justify-self:start;
+           z-index:3; 
+}
+.item3{               
+            grid-column:1 / span 2;     // add 10words paragraph into items
+            grid-row:1 / span 2;
+           align-self:end;
+           justify-self:end;
+           z-index:2;
+}
+______________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+

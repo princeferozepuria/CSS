@@ -1,0 +1,305 @@
+REQUIRMENTS OF WEBSITE:-
+
+SENSI EYES EFFECTIVE COLOR-EYES
+SILK AND SWIFT PAGE  
+HTML5 INTEGRATION  
+XTENSIBLE WEBPAGES 
+SMOOTH SENSER
+__________________________
+WHAT  CAN WE DO IN WEBSITE FROM CSS3:-
+Animatons
+Visual effects,brightness,contrast,saturation.
+2d and 3d graphics
+gradiants-2 color add
+sort-coding
+______________________________
+Some important points of CSS3
+CSS3 is the contination of and css2.
+There are two types of graphics:- Static graphics and Motion graphics.
+CSS3 light weight but more powerful.
+CSS3 is so much powerful of css2.
+CSS3 is the superset of css2.
+CSS3 supports 64bit gui(graphical user interface based architecture system.
+CSS3 coding methods are same as CSS2.
+______________________________________
+SHORT HAND PROPERTIES:-
+1=Short hand properties are made from lang proproties.
+2=Short hand property can have many values.
+3=Short hand properties supports only the latest version of any browser.
+4=use browser intigration programming to support shorthand properties
+___________________________________________________________
+CSS Rounded Corners
+Property 	Description
+border-radius 	A shorthand property for setting all the four border-*-*-radius properties
+border-top-left-radius 	Defines the shape of the border of the top-left corner
+border-top-right-radius 	Defines the shape of the border of the top-right corner
+border-bottom-right-radius 	Defines the shape of the border of the bottom-right corner
+border-bottom-left-radius 	Defines the shape of the border of the bottom-left corner
+__________________________________________________________________________
+CSS Border Image Properties
+Property 	Description
+border-image 	                 A shorthand property for setting all the border-image-* properties
+border-image-source 	Specifies the path to the image to be used as a border
+border-image-slice 	                 Specifies how to slice the border image
+border-image-width 	Specifies the widths of the border image
+border-image-outset 	Specifies the amount by which the border image area extends beyond the border box
+border-image-repeat 	Specifies whether the border image should be repeated, rounded or stretched
+
+Tip: The border-image property is actually a shorthand property for the border-image-source, border-image-slice, border-image-width, border-image-outset and border-image-repeat properties.
+________________________________________________________
+CSS Transform Properties
+
+The following table lists all the 2D transform properties:
+Property 	Description
+transform 	Applies a 2D or 3D transformation to an element
+transform-origin 	Allows you to change the position on transformed elements
+CSS 2D Transform Methods
+Function 	Description
+matrix(n,n,n,n,n,n) 	Defines a 2D transformation, using a matrix of six values
+translate(x,y) 	Defines a 2D translation, moving the element along the X- and the Y-axis
+translateX(n) 	Defines a 2D translation, moving the element along the X-axis
+translateY(n) 	Defines a 2D translation, moving the element along the Y-axis
+scale(x,y) 	Defines a 2D scale transformation, changing the elements width and height
+scaleX(n) 	Defines a 2D scale transformation, changing the element's width
+scaleY(n) 	Defines a 2D scale transformation, changing the element's height
+rotate(angle) 	Defines a 2D rotation, the angle is specified in the parameter
+skew(x-angle,y-angle) 	Defines a 2D skew transformation along the X- and the Y-axis
+skewX(angle) 	Defines a 2D skew transformation along the X-axis
+skewY(angle) 	Defines a 2D skew transformation along the Y-axis
+__________________________________________________________
+CSS3 3D TRANSFORMS
+
+The following table lists all the 3D transform properties:
+Property 	                          Description
+transform 	Applies a 2D or 3D transformation to an element
+transform-origin 	Allows you to change the position on transformed elements
+transform-style 	Specifies how nested elements are rendered in 3D space
+perspective 	Specifies the perspective on how 3D elements are viewed
+perspective-origin 	Specifies the bottom position of 3D elements
+backface-visibility 	Defines whether or not an element should be visible when not facing the screen
+
+CSS 3D Transform Methods
+Function                                               	Description
+matrix3d
+(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) 	Defines a 3D transformation, using a 4x4 matrix of 16 values
+translate3d(x,y,z) 	Defines a 3D translation
+translateX(x) 	Defines a 3D translation, using only the value for the X-axis
+translateY(y) 	Defines a 3D translation, using only the value for the Y-axis
+translateZ(z) 	Defines a 3D translation, using only the value for the Z-axis
+scale3d(x,y,z) 	Defines a 3D scale transformation
+scaleX(x) 	Defines a 3D scale transformation by giving a value for the X-axis
+scaleY(y) 	Defines a 3D scale transformation by giving a value for the Y-axis
+scaleZ(z) 	Defines a 3D scale transformation by giving a value for the Z-axis
+rotate3d(x,y,z,angle) 	Defines a 3D rotation
+rotateX(angle) 	Defines a 3D rotation along the X-axis
+rotateY(angle) 	Defines a 3D rotation along the Y-axis
+rotateZ(angle) 	Defines a 3D rotation along the Z-axis
+perspective(n) 	Defines a perspective view for a 3D transformed element
+
+___________________________
+CSS3 TRANSITIONS
+CSS transitions allows you to change property values smoothly, over a given duration.
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+The following example shows a 100px * 100px red <div> element. The <div> element has also specified a transition effect for the width property, with a duration of 2 seconds:
+The transition-timing-function property can have the following values:
+
+    ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+    linear - specifies a transition effect with the same speed from start to end
+    ease-in - specifies a transition effect with a slow start
+    ease-out - specifies a transition effect with a slow end
+    ease-in-out - specifies a transition effect with a slow start and end
+    cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+transition: property duration timing-function delay|initial|inherit;
+transition: width .35s ease-in-out 2s;
+
+transition-property: none|all|width|height|transform
+transition-duration: 5s;
+transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+transition-delay: 2s;
+transition-timing-function:steps(4,end);
+transition-timing-function:steps(4,start);
+transition-timing-function:steps(6);
+transition-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);
+-------------------------------------------------
+Value 	Description
+ease 	Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1))
+linear 	Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))
+ease-in 	Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))
+ease-out 	Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))
+ease-in-out 	Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))
+step-start 	Equivalent to steps(1, start)
+step-end 	Equivalent to steps(1, end)
+steps(int,start|end) 	Specifies a stepping function, with two parameters. The first parameter specifies the number of intervals in the function. It must be a positive integer (greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"
+cubic-bezier(n,n,n,n) 	Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1
+initial 	Sets this property to its default value. Read about initial
+inherit 	Inherits this property from its parent element. Read about inherit
+_______________________________________________________________
+CSS3 ANIMATIONS
+The following table lists the @keyframes rule and all the CSS animation properties:-
+Property 	                                  Description
+@keyframes 	                 Specifies the animation code
+
+SHORTHAND ANIMATION PROPERTY
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+animation:  yarr      3s               linear              0s        infinite              alternate   both     running;
+
+Value 	                                 Description
+animation-name           	Specifies the name of the keyframe you want to bind to the selector
+animation-duration 	Specifies how many seconds or milliseconds an animation takes to complete
+animation-timing-function 	Specifies the speed curve of the animation
+animation-delay 	                 Specifies a delay before the animation will start
+animation-iteration-count 	Specifies how many times an animation should be played
+animation-direction 	Specifies whether or not the animation should play in reverse on alternate cycles
+animation-fill-mode 	Specifies what values are applied by the animation outside the time it is executing
+animation-play-state 	Specifies whether the animation is running or paused
+initial 	                                  Sets this property to its default value.
+inherit                        	Inherits this property from its parent element.  
+________________________________________________________________
+CSS3 Tooltip
+
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+<body style="text-align:center;">
+<p>Move the mouse over the text below:</p>
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+<p>Note that the position of the tooltip text isn't very good. Go back to the tutorial and continue reading on how to position the tooltip in a desirable way.</p>
+</body>
+</html>
+
+Right Tooltip
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 105%;
+} 
+
+Left Tooltip
+.tooltip .tooltiptext {
+  top: -5px;
+  right: 105%;
+} 
+
+Top Tooltip
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+} 
+
+Bottom Tooltip
+.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+} 
+
+Tooltip Arrows
+To create an arrow that should appear from a specific side of the tooltip, add "empty" content after tooltip, with the pseudo-element class ::after together with the content property. The arrow itself is created using borders. This will make the tooltip look like a speech bubble.
+This example demonstrates how to add an arrow to the bottom of the tooltip:
+
+Right Arrow
+ .tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;}
+
+
+Left Arrow
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;} 
+
+Top Arrow
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;}
+
+Bottom Arrow
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;} 
+________________________________________________________
+CSS Multiple Columns
+The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers,books,poems
+
+Property 	Description
+column-count 	Specifies the number of columns an element should be divided into
+column-fill 	Specifies how to fill columns
+column-gap 	Specifies the gap between the columns
+column-rule 	A shorthand property for setting all the column-rule-* properties
+column-rule-color 	Specifies the color of the rule between columns
+column-rule-style 	Specifies the style of the rule between columns
+column-rule-width 	Specifies the width of the rule between columns
+column-span 	Specifies how many columns an element should span across
+column-width 	Specifies a suggested, optimal width for the columns
+columns 	                 A shorthand property for setting column-width and column-count
+___________________________________________________________________________
+CSS The object-fit Property
+
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+All Values of The CSS object-fit Property
+
+    fill - This is default. The replaced content is sized to fill the element's content box. If necessary, the object will be stretched or squished to fit
+    contain - The replaced content is scaled to maintain its aspect ratio while fitting within the element's content box
+    cover - The replaced content is sized to maintain its aspect ratio while filling the element's entire content box. The object will be clipped to fit
+    none - The replaced content is not resized
+    scale-down - The content is sized as if none or contain were specified (would result in a smaller concrete object size)
+
+

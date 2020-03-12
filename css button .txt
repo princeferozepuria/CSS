@@ -1,0 +1,26 @@
+header.demo-banner .heading a {
+    border: 2px solid #ebebec;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ebebec;
+    font-weight: 500;
+    position: relative;
+    line-height: 100%;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+a, a:hover, a:focus {
+    color: inherit;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}

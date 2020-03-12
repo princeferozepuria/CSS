@@ -1,0 +1,284 @@
+CSS3 SELECTORS
+1=SIMPLE SELECTORS
+2=COMBINATORS SELECTORS
+3=ATTRIBUTE SELECTORS
+4=PSEUDO CLASSES AND PSEUDO ELEMENTS
+___________________________________
+SIMPLE SELECTORS
+Tag Type Selector:-
+div{
+background-color:red;
+}
+
+Groupping Selectors:-
+p,q,i,h2,h3{color:slateblue};
+
+Class Selectors:-
+.logo{box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+Id Selectors{
+#box{
+color:pink;
+}
+
+Universal Selectors
+#box *{
+margin:0;
+paddding:0;
+box-sizing:border-box;}
+__________________________________________
+COMBINATORS SELECTORS
+1=Descendent Selectors(space)   select all child elements at any level include parent
+2=Direct Child Selectors(>)   select all child elements at any level but not include parent
+3=Adjacent Selectors(+)    select sibling elements immidiate brother sister 
+4=General Sibling Selectors(~) after close select all child elements but not include parent
+
+Descendent Selectors (space)   
+parent-element descendent-element(select all child elements at any level include parent)
+/*No matter how deep level is it*/
+div p{color:red}/*all child elements  color green*/
+.box div p span{color:green} 
+
+Direct Child Selectors(>) 
+parent-element > child element)
+#list > li{
+background-color:green;
+}
+
+Adjacent Selectors(+) 
+Specified-elements+adjacent-sibling elements
+#box1+h2{color: blue}
+
+General Sibling Selectors(~)
+#div~p{color:blue};
+______________________________________________________________
+CSS ATTRIBUTE SELECTORS
+a[attr=val]
+
+a[target] { /*only attribute target*/
+  background-color: yellow;
+}
+
+input[type="password"]{    /*attribute excect value*/
+color:red:}  
+
+img[alt^="image-of-cat"]{   /*any starting value like imga*/
+border:1px solid red;}
+
+img[altl="image-of-cat"]  /*starting value but include - hyphen*/
+border:2px groove black;}
+
+a[href$=".png"]{  /* ends value ends with a specified value*/
+color:red;}
+
+img[alt*="of"]{   /*value occurs anywhere in attribute*/
+border:1px ridge red;}
+
+img[alt~="cat"]  /*space seperated value*/
+
+[id]
+[id=my-Address]
+[id$=ess]
+[id|=my]
+[id^=L]
+[title~=beautiful]
+[id*=s]
+______________________________________________________________
+CSS PSEUDO CLASSES
+Using a formula (an + b). Description: a represents a cycle size, n is a counter (starts at 0), and b is an offset value.
+
+#list li:first-child{properties:values;} 
+#list li:last-child
+
+p:nth-child(odd) or p:nth-child(3n+0)  /*from upper starting*/
+p:nth-last-child(even) or p:nth-last-child(3n+0) /* from bottom starting*/
+
+p:nth-of-type(3n){background-color:red;} /*accept both child and parent*/
+p:nth-last-of-type(2n-1) 
+
+p:only-child{color:white;}    /* select only single tag */
+p:only-of-type {background: #ff0000;}  /*select only single tag but not same tag other tag acccept */
+
+p:first-of-type{} /*accept both child and parent */
+p:last-of-type{}  /*starting from bottom*/
+_____________________________________________________________
+EMPTY PSEUDO CLASS      /*target empty element*/          
+div:empty {
+  border:3px solid red;}
+.......................................................................................
+NOT PSEUDO CLASS   /*target not element and  space required*/   
+div :not(.class) {
+  color: blue;}
+.....................................................................................
+LANG PSEUDO CLASS
+p :lang(en) {     /*target specific language*/   
+  background: yellow;}
+<p lang="en">Ciao bella!</p>
+.....................................................................................
+TARGET  PSEUDO CLASS
+:target {    /*when target click then css apply*/   
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+}
+<a href="#news1">Jump to New content 1</a>
+<p id="news1"><b>New content 1...</b></p>
+.......................................................................................
+FORM RELATED PSEUDO CLASSES
+
+CSS:INPUT FIELD SELECTOR
+input[type=text] {   /*input field size*/
+  width: 100px;
+  height:20px;}
+
+CSS:FOCUS SELECTOR
+input[type=text]:focus {   
+border:3px solid red;}
+.....................................
+CSS :CHECKED SELECTOR /*when click then properties apply*/
+input[type='checkbox']:checked{
+box-shadow:0 0 0 3px red;}
+
+input[type='radio']:checked+label{
+color:green;}
+..............................................
+CSS :ENABLED/DISABLED SELECTORS
+input:enabled {
+  background: #ffff00;
+}
+option:disabled {
+  background: red;
+}
+............................................................
+CSS:REQUIRED/OPTIONAL SELECTOR
+input:required {
+  background-color: wheat;
+}
+
+input:optional {
+  background-color: yellow;
+}
+.........................................................
+INVALID/VALID SELECTOR
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid{
+background-color:wheat}
+..................................................
+READ-ONLY AND READ-WRITE
+input:read-only {
+  background-color: yellow;
+}
+
+input:read-write {
+  background-color: yellow;
+}
+....................................................
+IN-RANGE OR OUT-OF-RANGE
+input:in-range {
+  border: 2px solid yellow;}
+
+input:out-of-range {
+  border: 2px solid red;}
+......................................................
+ROOT
+:root {
+  --maincolor:blue;
+}
+h1{color:var(--main color);}
+......................................
+DEFAULT /*use checkbox,radio,option tag*/
+input:default{
+box-shadow: 0 0 0 3px red;}
+input:default+label{color:red;}
+option:default{color:red;}
+__________________________________________
+CSS ::before Selector
+h1::before {
+  content: url(smiley.gif);}
+..................................
+CSS ::after Selector
+p:hover::after {
+  content: "Read this -";}
+
+a::after{
+content:"("attr(href) ")";   /*it will show attribute address*/
+}
+......................................
+CSS ::first-letter Selector
+p::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+...........................................
+p::first-line {
+  background-color: yellow;
+}
+...................................................
+CSS ::selection Selector
+::selection {
+  color: red;
+  background: yellow;
+}
+................................................
+CSS ::placeholder Selector
+::placeholder {
+  color: red;
+}
+_______________________________________________________
+Specificity is a common reason why your CSS-rules don't apply to some elements, although you think they should
+
+Inline styles=1000 - An inline style is attached directly to the element to be styled. Example: <h1 style="color: #ffffff;">.
+
+IDs(100) - An ID is a unique identifier for the page elements, such as #navbar.
+
+Classes, attributes and pseudo-classes(10) - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.
+
+Elements and pseudo-elements (1) - This category includes element names and pseudo-elements, such as h1, div, :before and :after.
+
+RULES:-
+1=The universal selector is (*) is worth 0 specificity.
+2=When two selectors has same specificity the last one wins.
+3=Elements can never beat class selector,even if you pile them on.
+4=!important is superman ,it can beat up almost everything.
+_____________________________________________________
+COMPARISON WINS:-<h2 class="class" id="id " style="color:tomato;">Prince</h2>
+
+* vs h2=h2 wins
+h2 vs h2=last h2 wins
+h2 vs .class= .class wins
+50 h2 tags  vs .class=.class wins
+! important h2 vs id=!important wins
+.class vs id= id wins
+id,class,h2 vs inline-style=inline style wins
+external style sheet vs style attrbute=style attribute wins
+______________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

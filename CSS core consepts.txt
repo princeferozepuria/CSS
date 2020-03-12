@@ -1,0 +1,77 @@
+Em vs rem vs %;
+Em is relative to the font size of its direct or nearest parent:
+particular div me font-size:20px; set kro aur bad me usko 1em use kro like 1em:20px 
+ 
+Rem is root unit the ability to scale type across the entire page quickly;
+agar particular div me font size define nhi hai toh yeh rem ki manega;
+like:html{font-size:20px} and inside div like 1rem:20px;
+__________________________________________________
+@import rule
+This is used to add css files into direct main css file;
+@import "color.css";
+@import "printstyle.css" print;
+@import "media-768.css" screen and(max-width:768px);
+@import url( font awesome link);
+__________________________________________
+div::before and ::after pesudo element Advanced uses;
+*,*::before,*::after{
+box-sizing:border-box;}
+ 
+Pesudo element can be used for these purposes:-
+p::before{
+  content"open quote"
+}
+p::before{
+  content"close quote"
+}
+1=we can close quotes and open quotes
+2=add images top on bottom
+3=toollip 
+4=font awesome icons like .pdf ,,http,, to make anchor tag more attrective;
+5=add counters
+__________________________________
+Calc() function stands for -,+,*,/;
+
+height:calc(400px - 20px - 20px - 5px - 5px);  /*remove box-sizing border-box*/
+width:calc(400px - 20px - 20px - 5px - 5px);  
+.........................................................................................
+height:400px;
+width:400px;
+top:calc(50% - 200px);
+left:calc(50% - 200px); /*center div in any element*/
+.......................................................................................
+header{                       
+width:100%;
+height:100px;}
+
+content{            /*fixed responsive layout*/
+width:100%;
+height:calc(100vh - 100px - 100px);
+}
+
+footer{
+width:100%;
+height:100px;}
+________________________________________________
+@font-face{
+font-family:myname;
+src: url(opensans.woff);
+src:url(opensans.eot);
+}
+h1{
+font-family:opensans;
+WEBSITE=fontsquirrel.com
+__________________________________
+POSITIONS
+relative=ye jaha par hota hai relative waha se top left leta hai
+absolute=ye apne parent k according top left leta hai
+fixed=ye bhi apne parent screen ke according kam krta hai
+sticky=same as but ye left top screen se value leker sticky hota rehta hai 
+static=
+_________________________________________________________
+
+
+
+
+
+

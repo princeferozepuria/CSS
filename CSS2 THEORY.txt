@@ -1,0 +1,659 @@
+The World Wide Web Consortium (W3C) created CSS.
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files
+
+Why Use CSS?
+CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. 
+_____________________________________________________________
+Inline css-inside html any html tag
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+
+Internal css-inside html head tag
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+
+External css-inside head tag
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+________________________________________________
+CSS SELECTORS 
+0=element selector   <p> this is website</p>
+ CSS CODE:-p{text-align:center;
+                             color:red;}
+
+1=id-selector  <p id="prince"> this is prince </p>
+CSS CODE:-#prince{text-align:center;
+                                       color:green;}
+
+2=class selector <p class="prince">this is paragraph </p>
+                 .prince{text-align:center;
+                                color:blue;}
+
+3=group selector <h1> <h2> <h4> <p>
+CSS CODE:-h1,h2,h4,p{text-align:center;
+                                          color:yellow;}
+
+4=external css <style> <link rel="stylesheet" type="text/css" href="newfile.css"> </style>
+<h2> this is paragraph </h2>
+CSS CODE:- EXTERNAL FILE
+h2{color:grey;}
+
+5= specify that only specific HTML elements should be affected by a class.
+Only <p> elements with class="center" will be center-aligned:
+p.center {
+  text-align: center;
+  color: red;
+}
+
+6=HTML elements can also refer to more than one class.
+<p class="center large">This paragraph refers to two classes.</p>
+
+<style>this is style tag and we can use style tag inline css and internal css file
+also be in head tag and body tag </style>
+______________________________________________
+The CSS background properties are used to define the background effects 
+Property	                                               Description
+background	                  Sets all the background properties in one declaration
+background-attachment	 Sets whether a background image is fixed or scrolls with the rest of the page
+background-clip	                  Specifies the painting area of the background
+background-color	                  Sets the background color of an element
+background-image	                  Sets the background image for an element
+background-origin	                  Specifies where the background image(s) is/are positioned
+background-position	 Sets the starting position of a background image
+background-repeat	                  Sets how a background image will be repeated
+background-size	                  Specifies the size of the background image(s)
+.......................................
+background-attachment: scroll|fixed|local|initial|inherit;
+Property          Values
+Value	Description
+scroll	The background image will scroll with the page. This is default
+fixed	The background image will not scroll with the page
+local	The background image will scroll with the element's contents
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+.............................................
+background-clip: border-box|padding-box|content-box|initial|inherit;
+Property Values
+Value	Description	Play it
+border-box	Default value. The background extends behind the border	
+padding-box	The background extends to the inside edge of the border	
+content-box	The background extends to the edge of the content box	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+________________________________________________________________
+An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+All CSS Outline Properties
+Property	Description
+outline	A shorthand property for setting outline-width, outline-style, and outline-color in one declaration
+outline-color	Sets the color of an outline
+outline-offset	Specifies the space between an outline and the edge or border of an element
+outline-style	Sets the style of an outline
+outline-width	Sets the width of an outline
+_______________________________________________
+CSS Text
+This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored
+
+All CSS Text Properties
+  Property	                    Description
+  color	                 Sets the color of text
+direction	                 Specifies the text direction/writing direction
+letter-spacing	Increases or decreases the space between characters in a text
+line-height	Sets the line height
+text-align	                 Specifies the horizontal alignment of text
+text-decoration	Specifies the decoration added to text
+text-indent	Specifies the indentation of the first line in a text-block
+text-shadow	Specifies the shadow effect added to text
+text-transform	Controls the capitalization of text
+text-overflow	Specifies how overflowed content that is not displayed should be signaled to the user
+unicode-bidi	Used together with the direction property to set or return whether the text should be overridden to                                    support multiple languages in the same document
+vertical-align	Sets the vertical alignment of an element
+white-space	Specifies how white-space inside an element is handled
+word-spacing	Increases or decreases the space between words in a text
+
+Value	                                           Description
+text-decoration-line	Sets the kind of text decoration to use (like underline, overline, line-through)
+text-decoration-color	Sets the color of the text decoration
+text-decoration-style	Sets the style of the text decoration (like solid, wavy, dotted, dashed, double)
+initial	                                  Sets this property to its default value. Read about initial
+inherit	                                      Inherits this property from its parent element. Read about inherit
+
+
+CSS text-shadow Property
+Property                                 Values
+Value	                                    Description
+h-shadow	Required. The position of the horizontal shadow. Negative values are allowed	
+v-shadow	Required. The position of the vertical shadow. Negative values are allowed	
+blur-radius	Optional. The blur radius. Default value is 0	
+color	Optional. The color of the shadow. Look at CSS Color Values for a complete list of possible color values	
+none	Default value. No shadow	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+
+text-shadow : 2px 2px 4px #000000;white
+text-shadow: 0 0 3px #FF0000; red neon glow:
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; red and blue neon glow:
+2px 2px red
+5px 5px red
+20px 20px red
+-10px 10px red
+-10px -10px red
+5px 5px red
+5px 5px 1px red
+5px 5px 2px red
+5px 5px 3px red
+5px 5px 4px red
+5px 5px 5px red
+5px 5px 10px red
+5px 5px 10px #00FF00
+5px 5px 10px black
+5px 5px 10px #00FF00
+____________________________________________________________
+The CSS font properties define the font family, boldness, size, and the style of a text.
+In CSS, there are two types of font family names:
+generic family - a group of font families with a similar look (like "Serif" or "Monospace")
+font family - a specific font family (like "Times New Roman" or "Arial")
+
+All CSS Font Properties
+Property	Description
+font	Sets all the font properties in one declaration
+font-family	Specifies the font family for text
+font-size	Specifies the font size of text
+font-style	Specifies the font style for text
+font-variant	Specifies whether or not a text should be displayed in a small-caps font
+font-weight	Specifies the weight of a font
+
+
+Property/Value	Description
+font-style	Specifies the font style. Default value is "normal"
+font-variant	Specifies the font variant. Default value is "normal"
+font-weight	Specifies the font weight. Default value is "normal"
+font-size/line-height	Specifies the font size and the line-height. Default value is "normal"
+font-family	Specifies the font family. Default value depends on the browser
+caption	Uses the font that are used by captioned controls (like buttons, drop-downs, etc.)
+icon	Uses the font that are used by icon labels
+menu	Uses the fonts that are used by dropdown menus
+message-box	Uses the fonts that are used by dialog boxes
+small-caption	A smaller version of the caption font
+status-bar	Uses the fonts that are used by the status bar
+initial	Sets this property to its default value. Read about initial
+inherit	Inherits this property from its parent element. Read about inherit
+_____________________________________________________________
+Links can be styled with any CSS property (e.g. color, font-family, background, etc.).
+In addition, links can be styled differently depending on what state they are in.
+
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+When setting the style for several link states, there are some order rules:
+a:hover MUST come after a:link and a:visited
+a:active MUST come after a:hover
+_____________________________________
+CSS Lists
+The CSS list properties allow you to:
+Set different list item markers for ordered lists
+Set different list item markers for unordered lists
+Set an image as the list item marker
+Add background colors to lists and list items
+
+All CSS List Properties
+Property	Description
+list-style	Sets all the properties for a list in one declaration
+list-style-image	Specifies an image as the list-item marker
+list-style-position	Specifies the position of the list-item markers (bullet points)
+list-style-type	Specifies the type of list-item marker
+
+Remove Default Settings
+The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:
+
+When using the shorthand property, the order of the property values are:
+list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+list-style-image (specifies an image as the list item marker)
+If one of the property values above are missing, the default value for the missing property will be inserted, if any.
+
+LIST STYLE VALUES
+Value	Description	Play it
+disc	Default value. The marker is a filled circle	
+armenian	The marker is traditional Armenian numbering	
+circle	The marker is a circle	
+cjk-ideographic	The marker is plain ideographic numbers	
+decimal	The marker is a number	
+decimal-leading-zero	The marker is a number with leading zeros (01, 02, 03, etc.)	
+georgian	The marker is traditional Georgian numbering	
+hebrew	The marker is traditional Hebrew numbering	
+hiragana	The marker is traditional Hiragana numbering	
+hiragana-iroha	The marker is traditional Hiragana iroha numbering	
+katakana	The marker is traditional Katakana numbering	
+katakana-iroha	The marker is traditional Katakana iroha numbering	
+lower-alpha	The marker is lower-alpha (a, b, c, d, e, etc.)	
+lower-greek	The marker is lower-greek	
+lower-latin	The marker is lower-latin (a, b, c, d, e, etc.)	
+lower-roman	The marker is lower-roman (i, ii, iii, iv, v, etc.)	
+none	No marker is shown	
+square	The marker is a square	
+upper-alpha	The marker is upper-alpha (A, B, C, D, E, etc.) 	
+upper-greek	The marker is upper-greek	
+upper-latin	The marker is upper-latin (A, B, C, D, E, etc.)	
+upper-roman	The marker is upper-roman (I, II, III, IV, V, etc.)	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit	
+__________________________________________________
+CSS Table Properties
+Property	                 Description
+border	                 Sets all the border properties in one declaration
+border-collapse	Specifies whether or not table borders should be collapsed
+border-spacing	Specifies the distance between the borders of adjacent cells
+caption-side	Specifies the placement of a table caption
+empty-cells	Specifies whether or not to display borders and background on empty cells in a table
+table-layout	Sets the layout algorithm to be used for a table
+
+border-spacing: length|initial|inherit;
+Property         Values
+Value	      Descriptio
+length length	Specifies the distance between the borders of adjacent cells in px, cm, etc. Negative values are not allowed.
+If one value is specified, it defines both the horizontal and vertical spacing between cells
+If two values are specified, the first sets the horizontal spacing and the second sets the vertical spacing
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+_________________________________________________________________
+CSS Layout - The display Property
+The display property is the most important CSS property for controlling layout.
+Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+Property	Description
+display	Specifies how an element should be displayed
+
+1=Block-level Elements
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+
+2=Inline Elements
+An inline element does not start on a new line and only takes up as much width as necessary.
+
+Display: none;
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.
+The <script> element uses display: none; as default. 
+
+Override The Default Display Value
+As mentioned, every element has a default display value. However, you can override this.
+Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.
+
+Difference between display:none and visiblity: hidden
+visibility:hidden hides the element, but it still takes up space in the layout.
+display:none removes the element from the document. It does not take up any space.
+
+Value	Description	Play it
+inline	Displays an element as an inline element (like <span>). Any height and width properties will have no effect	
+block	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	
+contents	Makes the container disappear, making the child elements children of the element the next level up in the                                                                                        DOM	
+flex	                    Displays an element as a block-level flex container	
+grid	                           Displays an element as a block-level grid container	
+inline-block	Displays an element as an inline-level block container. The element itself is formatted as an inline                                              element, but you can apply height and width values	
+inline-flex	Displays an element as an inline-level flex container	
+inline-grid	Displays an element as an inline-level grid container	
+inline-table	The element is displayed as an inline-level table	
+list-item	                       Let the element behave like a <li> element	
+run-in	                      Displays an element as either block or inline, depending on context	
+table	                     Let the element behave like a <table> element	
+table-caption	      Let the element behave like a <caption> element	
+table-column-group	Let the element behave like a <colgroup> element	
+table-header-group	    Let the element behave like a <thead> element	
+table-footer-group	Let the element behave like a <tfoot> element	
+table-row-group	Let the element behave like a <tbody> element	
+table-cell	              Let the element behave like a <td> element	
+table-column	Let the element behave like a <col> element	
+table-row	               Let the element behave like a <tr> element	
+none	           The element is completely removed	
+initial	          Sets this property to its default value. Read about initial	
+inherit	           Inherits this property from its parent element. Read about inherit
+....................................................................................................................................
+visibility	Specifies whether or not an element should be visible
+
+Value	Description	Play it
+visible	Default value. The element is visible	
+hidden	The element is hidden (but still takes up space)	
+collapse	Only for table rows (<tr>), row groups (<tbody>), columns (<col>), column groups (<colgroup>). This value removes a row or column, but it does not affect the table layout. The space taken up by the row or column will be available for other content.
+If collapse is used on other elements, it renders as "hidden"
+
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit
+____________________________________________________________________
+Using width, max-width and margin: auto;
+Using width, max-width and margin: auto;
+As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+
+Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins:
+
+This <div> element has a width of 500px, and margin set to auto.
+
+Note: The problem with the <div> above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.
+
+Using max-width instead, in this situation, will improve the browser's handling of small windows. This is important when making a site usable on small devices:
+This <div> element has a max-width of 500px, and margin set to auto.
+Tip: Resize the browser window to less than 500px wide, to see the difference between the two divs!
+max-width: 500px;
+margin: auto;
+_________________________________________________________
+CSS Layout - float and clear
+The CSS float property specifies how an element should float.
+The CSS clear property specifies what elements can float beside the cleared element and on which side.
+
+The float Property
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+The float property can have one of the following values:
+left - The element floats to the left of its container
+right- The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+In its simplest use, the float property can be used to wrap text around images.
+
+The clear Property
+The clear property specifies what elements can float beside the cleared element and on which side.
+The clear property can have one of the following values:
+none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent
+The most common way to use the clear property is after you have used a float property on an element.
+When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+
+The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+________________________________________________
+Center elements
+horizontally and vertically
+
+1st way
+Center Align Elements
+To horizontally center a block element (like <div>), use margin: auto;
+Setting the width of the element will prevent it from stretching out to the edges of its container.
+The element will then take up the specified width, and the remaining space will be split equally between the two margins:
+
+2nd way
+To just center the text inside an element, use text-align: center;
+
+3rd way
+Center an Image
+To center an image, set left and right margin to auto and make it into a block element:
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+4th way
+left and Right Align - Using position
+One method for aligning elements is to use position: absolute;:
+
+5th method
+Left and Right Align - Using float
+Another method for aligning elements is to use the float property:
+
+6th method
+Center Vertically - Using padding
+.center {
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;
+}
+
+7th method
+Center Vertically - Using line-height
+Another trick is to use the line-height property with a value that is equal to the height property.
+.center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+/* If the text has multiple lines, add the following: */
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+8th method
+Center Vertically - Using position & transform
+If padding and line-height are not options, a third solution is to use positioning and the transform property:
+.center { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+___________________________________________
+CSS Combinators
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS:
+descendant selector (space)
+direct child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+Descendant Selector
+The descendant selector matches all elements that are descendants of a specified element.
+The following example selects all <p> elements inside <div> elements: 
+Example
+div p {
+  background-color: yellow;
+}
+
+Child Selector
+The child selector selects all elements that are the immediate children of a specified element.
+The following example selects all <p> elements that are immediate children of a <div> element:
+Child Selector
+Example
+div > p {
+  background-color: yellow;
+}
+
+Adjacent Sibling Selector
+The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+The following example selects all <p> elements that are placed immediately after <div> element
+
+General Sibling Selector
+The general sibling selector selects all elements that are siblings of a specified element.
+The following example selects all <p> elements that are siblings of <div> elements: 
+Example
+div ~ p {
+  background-color: yellow;
+}
+___________________________________________________________________
+CSS Pseudo-classes
+What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+Style an element when a user mouses over it Style visited and unvisited links differently
+Style an element when it gets focus
+
+selector:pseudo-class {
+  property:value;
+}
+ul > :first-child {
+
+All CSS Pseudo Classes
+Selector             	Example 	                                     Example description
+:active 	            a:active 	                                  Selects the active link
+:checked 	input:checked 	                 Selects every checked <input> element
+:disabled 	input:disabled 	                 Selects every disabled <input> element
+:empty 	p:empty 	                                  Selects every <p> element that has no children
+:enabled 	input:enabled 	                 Selects every enabled <input> element
+:first-child 	p:first-child 	Selects every <p> elements that is the first child of its parent
+:first-of-type 	p:first-of-type 	Selects every <p> element that is the first <p> element of its parent
+:focus 	input:focus 	                 Selects the <input> element that has focus
+:hover 	a:hover 	                                  Selects links on mouse over
+:in-range 	input:in-range 	                 Selects <input> elements with a value within a specified range
+:invalid 	input:invalid 	                 Selects all <input> elements with an invalid value
+:lang(language) 	p:lang(it) 	                 Selects every <p> element with a lang attribute value starting with "it"
+:last-child 	p:last-child 	Selects every <p> elements that is the last child of its parent
+:last-of-type 	p:last-of-type 	Selects every <p> element that is the last <p> element of its parent
+:link 	a:link 	                                             Selects all unvisited links
+:not(selector) 	:not(p) 	Selects every element that is not a <p> element
+:nth-child(n) 	p:nth-child(2) 	Selects every <p> element that is the second child of its parent
+:nth-last-child(n) 	p:nth-last-child(2) 	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n) p:nth-last-of-type(2) 	Selects every <p> element that is the second <p> element of                                                                                  its parent, counting from the last child
+:nth-of-type(n) 	p:nth-of-type(2) 	Selects every <p> element that is the second <p> element of its parent
+:only-of-type 	p:only-of-type 	Selects every <p> element that is the only <p> element of its parent
+:only-child 	p:only-child 	Selects every <p> element that is the only child of its parent
+:optional 	input:optional 	Selects <input> elements with no "required" attribute
+:out-of-range 	input:out-of-range 	Selects <input> elements with a value outside a specified range
+:read-only 	input:read-only 	Selects <input> elements with a "readonly" attribute specified
+:read-write 	input:read-write 	Selects <input> elements with no "readonly" attribute
+:required 	input:required 	Selects <input> elements with a "required" attribute specified
+:root 	root 	                 Selects the document's root element
+:target 	#news:target 	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid 	input:valid 	Selects all <input> elements with a valid value
+:visited 	a:visited   	Selects all visited links
+___________________________________________________________-
+CSS Pseudo-elements
+A CSS pseudo-element is used to style specified parts of an element.
+For example, it can be used to:
+ Style the first letter, or line, of an element
+ Insert content before, or after, the content of an element
+
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+The following properties apply to the ::first-line pseudo-element:
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+The following properties apply to the ::first-letter pseudo- element: 
+    font properties
+    color properties 
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if "float" is "none")
+    text-transform
+    line-height
+    float
+    clear
+
+h1::before {
+  content: url(smiley.gif);
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+All CSS Pseudo Elements
+Selector 	Example 	Example description
+::after 	p::after 	Insert something after the content of each <p> element
+::before 	p::before 	Insert something before the content of each <p> element
+::first-letter 	p::first-letter 	Selects the first letter of each <p> element
+::first-line 	p::first-line 	Selects the first line of each <p> element
+::selection 	p::selection 	Selects the portion of an element that is selected by a user
+______________________________________________________________________________
+CSS Opacity / Transparency
+The opacity property specifies the opacity/transparency of an element.
+Note: IE8 and earlier use filter:alpha(opacity=x). The x can take a value from 0 - 100. A lower value makes the element more transparent.
+img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+________________________________________________________
+CSS ATTRIBUTES SELECTORS
+The [attribute] selector is used to select elements with a specified attribute.
+The following example selects all <a> elements with a target attribute:
+Example
+a[target] {
+  background-color: yellow;
+} 
+
+The [attribute="value"] selector is used to select elements with a specified attribute and value.
+The following example selects all <a> elements with a target="_blank" attribute:
+Example
+a[target="_blank"] {
+  background-color: yellow;
+} 
+
+CSS [attribute~="value"] Selector
+The [attribute~="value"] selector is used to select elements with an attribute value containing a specified word.
+The following example selects all elements with a title attribute that contains a space-separated list of words, one of which is "flower":
+Example
+[title~="flower"] {
+  border: 5px solid yellow;
+} 
+
+CSS [attribute|="value"] Selector
+The [attribute|="value"] selector is used to select elements with the specified attribute starting with the specified value.
+The following example selects all elements with a class attribute value that begins with "top":
+Note: The value has to be a whole word, either alone, like class="top", or followed by a hyphen( - ), like class="top-text"! 
+Example
+[class|="top"] {
+  background: yellow}
+
+CSS [attribute^="value"] Selector
+The [attribute^="value"] selector is used to select elements whose attribute value begins with a specified value.
+The following example selects all elements with a class attribute value that begins with "top":
+Note: The value does not have to be a whole word! 
+Example
+[class^="top"] {
+  background: yellow;
+} 
+
+
+CSS [attribute$="value"] Selector
+The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value.
+The following example selects all elements with a class attribute value that ends with "test":
+Note: The value does not have to be a whole word!  
+Example
+[class$="test"] {
+  background: yellow;
+} 
+
+
+CSS [attribute*="value"] Selector
+The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+The following example selects all elements with a class attribute value that contains "te":
+Note: The value does not have to be a whole word!  
+Example
+[class*="te"] {
+  background: yellow;
+} 
+________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+

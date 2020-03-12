@@ -1,0 +1,66 @@
+MEDIA QUERIES
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+* {box-sizing: border-box;}
+
+
+CSS3 MEDIA TYPEPS:-
+1=all
+2=print
+3=screen
+4=speech
+
+THESE ARE SCREEN VIEWPORTS:-
+1920  for desktop 1400-1920px;   
+1440
+1366
+1024 
+700-900  for tablet 768px;
+320-480 for mobile 480px;
+_____________________________
+CSS LOGICAL OPERATORS:-
+and 
+not
+only
+_____________________________
+SYNTAX:-
+@media screen and (max-width:900px){ 
+/*means that ki screen ka size  900px se niche sab pe yahi css code chalega */
+/*ek aur breakpoint bhi bna sakte hain like:-768px: */
+.container{width:50%;
+   }
+ }
+@media screen and (max-width:480px){
+#wraper{
+width:auto;
+}
+#content{
+width:auto;
+}
+#sidebar{
+width:auto;
+}
+_________________________________________
+@media screen and (min-width:900px){
+/*means that ki screen ka size  900px se oper sab pe yahi css code chalegi */
+#container{
+width:100%;
+margin:0 auto;
+}
+_________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

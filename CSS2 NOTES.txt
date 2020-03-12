@@ -1,0 +1,78 @@
+1=CSS2 stands for web designing
+2=CSS3 stands for add animations/transitions/visual effects
+3=padding and margin only works with block level elements like span{display:block};
+4=display inline has default float value
+5=every form input field has required float value compulsory
+______________________________________________________________
+Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;
+Tip: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+Note: If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.
+Tip: Always set a background-color to be used if the image is unavailable.
+Note: By default,background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.
+
+The background-origin property specifies the origin position (the background positioning area) of a background image.
+Note: This property has no effect if background-attachment is "fixed".
+Tip: The background image is placed according to the background-position property. If no background-position is specified, the image is always placed at the element's top left corner.
+
+Note: Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline.
+Note: None of the other outline properties will have any effect, unless the outline-style property is set!
+Note: Always declare the outline-style property before the outline-color property. An element must have an outline before you change the color of it.
+
+Note: For W3C compliant CSS: If you define the color property, you must also define the background-color.
+Note: It is not recommended to underline text that is not a link, as this often confuses the reader.
+Note:The em size unit is recommended by the W3C.
+Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts.
+Note: If the name of a font family is more than one word, it must be in quotation marks, like: "Times New Roman".
+Note: Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+____________________________________________________________________________________
+Tip: The main benefit of table-layout: fixed; is that the table renders much faster. On large tables, users will not see any part of the table until the browser has rendered the whole table. So, if you use table-layout: fixed, users will see the top of the table while the browser loads and renders rest of the table. This gives the impression that the page loads a lot quicker!
+
+Note: The values "flex" and "inline-flex" requires the -webkit- prefix to work in Safari.
+Note: "display: contents" does not work in Edge/Internet Explorer.
+Note: Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it.
+
+NOTE:Difference between display:none and visiblity: hidden
+NOTE:visibility:hidden hides the element, but it still takes up space in the layout.
+NOTE:display:none removes the element from the document. It does not take up any space.
+Tip:display none use show panel after click use with javascript
+
+Note: Center aligning has no effect if the width property is not set (or set to 100%).
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+Note: If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. You can use the "clearfix" hack to fix this (see example below).
+
+Tip: Use the :link selector to style links to unvisited pages, the :hover selector to style links when you mouse over them, and the :active selector to style links when you click on them.
+Note: The :link selector does not style links you have already visited.
+Tip: Use the :visited selector to style links to visited pages, the :hover selector to style links when you mouse over them, and the :active selector to style links when you click on them.
+Tip: The :active selector can be used on all elements, not only links.
+
+Tip: The :hover selector can be used on all elements, not only on links.
+Tip: Use the :link selector to style links to unvisited pages, the :visited selector to style links to visited pages, and the :active selector to style the active link.
+Note: :hover MUST come after :link and :visited (if they are present) in the CSS definition, in order to be effective!
+
+FORM RELATED
+Tip: The :focus selector is allowed on elements that accept keyboard events or other user inputs.
+Note:The :checked selector matches every checked <input> element (only for radio buttons and checkboxes) and <option> element
+The :enabled selector matches every enabled element (mostly used on form elements).
+The :disabled selector matches every disabled element (mostly used on form elements).
+Note: The :required selector only applies to the form elements: input, select and textarea.
+Tip: Use the :optional selector to select form elements which are optional.
+
+Tip:Form elements with no required attribute are defined as optional.
+Note: The :optional selector only applies to the form elements: input, select and textarea.
+Tip: Use the :required selector to select form elements which are require
+
+Note: The :invalid selector only works for form elements with limitations, such as input elements with min and max attributes, email fields without a legal email, or number fields without a numeric value, etc.
+Note: The :valid selector only works for form elements with limitations, such as input elements with min and max attributes, email fields with a legal email, or number fields with a numeric value, etc.
+
+Note:The :read-only selector selects elements which are "readonly"
+
+Note: The :in-range selector only works for input elements with min and/or max attributes! input type numbers
+Tip: Use the :out-of-range selector to select all elements with a value that is outside a specified range.
+The :root selector matches the document's root element.
+______________________________________________________________
+
+
+
+
+
+

@@ -1,0 +1,427 @@
+CSS Comments
+/* These all are responsive website layout properties*/
+____________________________________
+CSS {PROPERTIES:VALUES}
+LONG HAND AND SHORT HAND PROPERTIES:-
+____________________________________
+CSS RESPONSIVE BACKGROUND IMAGE
+html{
+ background: url('k.jpg') no-repeat center center fixed;
+ -webkit-background-size:cover;
+ -moz-background-size:cover; 
+ -o-background-size:cover;
+ background-size: cover;
+}  
+______________________________
+CSS BACKGROUND (4)
+
+background: lightblue url(""img_tree.gif") no-repeat fixed center; 
+background-attachment: scroll|fixed|local|initial|inherit;
+background-clip: border-box|padding-box|content-box|initial|inherit;
+background-color: #92a8d1|transparent|initial|inherit;
+background-image: url(../image/fb.jpg"), url("paper.gif"); url|none|initial|inherit;
+background-position:       50% 50%;            10px 200px;                horizontal vertical
+                                           left top                left center                     left bottom
+                                         right top              right center                    right bottom
+                                         center top          center center                 center bottom
+                                            initial                       inherit
+background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit|space|round /*X=horizontal, Y=vertical*/
+background-size: auto|length|cover|contain|initial|inherit;              100% 100%  75px 75px  width height
+background-origin: padding-box|border-box|content-box|initialinherit;
+_______________________________________________________
+CSS BORDER top right bottom left
+
+SHORTHAND
+border:4px solid violet;
+border:none;
+
+border-width:thin,medium,thick,5px, initial ,inherit;
+border-top-width:7px;
+border-right-width:10px;
+border-bottom-width:6px;
+border-left-width:9px;
+
+border-style:none,hidden,solid,groove,dotted,dashed,double,ridge,inset,outset;
+border-top-style:solid;
+border-right-style:dotted;
+border-bottom-style:dashed;
+border-left-style:ridge;
+
+border-color:SlateBlue; or transparent;
+border-top-color:MediumSeaGreen;
+border-right-color:Gray;
+border-bottom-color:DodgerBlue;
+border-left-color:Tomato
+
+border-radius:20px 10px; and 50%;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+__________________________________________________
+CSS OUTLINE SHORTHAND  
+outline: 2px dashed blue;
+outline:none;
+outline-width: medium|thin|thick|length%|initial|inherit;
+outline-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+outline-color: hsla(89, 43%, 51%, 0.3);
+outline-offset: 15px;
+_________________________________________
+CSS BOX SHADOW
+box-shadow:0 0 2px 1px rgba(0,140,186,0.5);
+box-shadow:5px 5px 3px #aaaaaa;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1.0);
+img:hover{
+box-shadow:0 0 2px 1px rgba(0,140,186,0.5);
+}
+_________________________________________
+CSS MARGINS  top    right   bottom    left            OUTSIDE BOX/ELEMENT MOVE
+margin:            25px   50px   75px     100px;
+margin: 25% auto;    vertical/horizontallycenter      top bottom /right left
+margin-top:20px;
+margin-right:20px;
+margin-bottom:20px;
+margin-left:20px;
+margin:0 auto;
+_____________________________
+CSS PADDING  top     left/right            bottom      INSIDE BOX/ELEMENT INCREASE
+padding:         25px       30px                  42px
+padding-top:10px;
+padding-right:15%;
+padding-bottom:18em;
+padding-left:20px;
+box-sizing:border-box;    extra padding remove
+_________________________________________
+CSS HEIGHT/WIDTH AND RESPONSIVE 
+height:400px; auto     
+width:500px; auto or 33.33% 
+
+min-width:300px;    /*minimum width 300 tk rahegi and agge kitni b bade and automatic scroll bar add hoga*/
+max-width:1400px;   /*maximum width 1400 tk jaegi aage nhi badegi*/
+min-height:275px;  /*minimum height 275 tak rahegi aur scroll bar add hoga*/
+max-height:600px; /*maximum height 600tk rahegi content will be overflow*/ 
+										
+max-width: 500px; inside div 
+margin: auto;
+______________________________________________________
+CSS TEXT
+color: rgb(0,0,255);
+text-transform: none|capitalize|uppercase|lowercase|initial|inherit;
+letter-spacing: -1px;
+word-spacing: 20px;
+text-align: left|right|center|justify|initial|inherit;
+line-height: normal|1|180%|initial|inherit;  
+text-indent: 10em;
+text-shadow: 2px 2px 8px #FF0000;
+vertical-align: baseline|%|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;
+direction: ltr|rtl|initial|inherit;
+unicode-bidi: normal|embed|bidi-override|initial|inherit;
+text-overflow: clip|ellipsis|string|initial|inherit;
+SHORTHAND:-text-decoration: underline overline dotted red; 
+text-decoration:none;
+text-decoration-line:underline, overline, line-through;
+text-decoration-color:red;
+text-decoration-style: solid, wavy, dotted, dashed, double;
+_______________________________________
+CSS FONT
+font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar;
+
+font-family: "Times New Roman", Times, serif;
+font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|1.5em;
+font-style: italic|oblique;
+font-variant:small-caps;
+font-weight:700|bold|bolder|lighter;
+____________________________________
+CSS LINKS ORDER RULES
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+  EXAMPLE:-
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+________________________________________
+CURSUR STYLES
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+_____________________________________
+CSS LISTS STYLES FOR OL AND UL AND LI
+SHORTHNAD
+list-style: square inside url("sqpurple.gif");
+list-style: none;
+list-style-image: url('sqpurple.gif');  for icon use
+list-style-position: inside|outside;
+list-style-type:circle,disc,square,decimal,decimal-leading-zero,lower-alpha,lower-greek,lower-latin, lower-roman,upper-alpha,upper-latin,upper-greek,upper-roman;
+
+ENTITY BULLETS REMOVE AND CHANGE COLOR(&bull;):
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  color: blue; /* Or a color you prefer */
+}
+______________________________________________
+CSS RESPONSIVE Table USE DIV CONTAINTER <div style="overflow-x:auto;"> ....</div>
+border: 4px dotted blue;
+border-collapse: separate|collapse   ===should be collapsed into a single border:
+vertical-align: middle;  ==vertical alignment
+text-align: center;
+empty-cells: show|hide
+table-layout: auto|fixed
+border-spacing: length|initial|inherit;   //border property required
+
+tr:hover {background-color: #f5f5f5;} ==hoverable table
+tr:nth-child(even) {background-color: red;}
+tr:nth-child(odd) {background-color: green;}
+______________________________________
+CSS DISPLAY
+
+display: none;     === using with java script remove element
+visibility: visible|hidden|collapse|   ====The element is hidden (but still takes up space)
+display:inline;   ===only element in one line and margin and padding not working
+display:block;  ====It starts on a new line, and takes up the whole width
+display:inline-block;    ===top and bottom margins/paddings are respected
+display:list-item;   
+display:contents,flex,grid,run-in;
+display:inline-flex,inline-grid,inline-table;
+display:table,table-caption,table-column-group;       /*tables  powers*/
+table-header-group,table-footer-group;
+table-row-group,table-columm,table-row;
+
+_____________________________________________________________
+CSS  LAYOUT - THE POSITION 
+UNLOCK LAYER OF ANY ELEMENT DOES'NOT AFFECTS ANOTHER HTML ELEMENTS:-
+1=relative=is positioned relative to its normal position. 
+2=absoloute=starts from body,our parent element by defaut top left,
+3=fixed=position fix, width compulsory
+4=sticky=the user's scroll position.
+CHILD PROPERTIES
+top: auto,15px,5%;
+right: auto,15px,5%;
+bottom: auto,15px,5%;
+left: auto,15px,5%;
+z-index:1, -1;
+clip:rect(0px,25px,25px,0px);
+...........................................................
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
+_______________________________________________________________
+CSS FlOAT AND OVERFLOW
+box-sizing: content-box|border-box
+float:left,right,none;
+clear:both,left,right; /*clear float left and right power*/
+
+.clearfix::after{
+content:"";
+clear:both;
+display:table;} 
+
+overflow:visible;    /*content showes outisde overflow*/
+overflow:hidden;    /*content will be invinsible*/
+overflow:scroll;    /*scroll bar will be added forever vertical and horizontal*/
+overflow:auto;   /* browser automatically will add scroll bar*/
+overflow-x:visible,hidden,scroll,auto; /*only horizontal scroll bar add left to right*/
+overflow-y:visible,hidden,scroll,auto;/*only vertical scroll bar add  top to bottom*/
+_____________________________________________
+CSS Opacity / Transparency values=0.0 to 1.0  color halka
+div {
+  opacity: 0.3;   
+  filter: alpha(opacity=30); /* For IE8 and earlier and text not show clear */
+}
+
+div {
+  background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity and text clear view */
+}
+_______________________________________________
+CSS RESIZE
+as well as use overflow:auto;
+textarea{
+resize:vertical,horizontal,both,none;}
+____________________________________
+CSS VARIABLES
+:root{
+--main_font:calibri;
+}
+h5{ /*Global Scope*/
+font-family:var(--main_font);
+}
+.............................................
+div{  /*local scope*/
+min-height:500px;
+min-width:500px;
+--main-color:wheat;
+background-color:var(--main-color);
+}
+_____________________________________
+CSS COUNTER
+counter-reset:my_counter 0;       /*create and reset one or more counters*/
+
+content:"Chapter " counter(my_counter, upper roman);     /*counter() function used*/
+
+counter-increment:my_counter 1 or my_counter -1;      /*increment one or more counters*/
+#list>li::before{
+content:"Chapter " counter(my_counter);
+counter-increment: my_counter 1;}
+________________________________________________________________
+CSS FORM INPUT DESIGN
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+</form>
+
+
+WITHOUT BORDER INPUT FIELD
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+}
+.................................................
+WITH BORDER INPUT FIELD
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  background-color: #3CBC8D;
+}
+.....................................................
+TRASITION INPUT FIELD
+ input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+..................................................
+WITH ICON INPUT FIELD
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+................................
+ANIMATED INPUT FIELD
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+____________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

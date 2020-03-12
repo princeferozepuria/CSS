@@ -1,0 +1,286 @@
+CSS3 Rounded Corners
+_________________________
+SHORT HAND:-
+    4Values          top left   top right      bottom right      bottom left
+border-radius:  15px       15px             30px                     5px;
+ 
+   3Values          top-left   top-right and bottom-left   bottom-right
+border-radius: 15px                   50px                             30px; 
+
+2values           top-left,bottom-right       top-right and bottom-left
+border-radius:             15px                                50px;
+
+border-radius: 50px / 15px; or 50% /*ellipse border*/
+border-radius: 2em 1em 4em / 0.5em 3em; 
+
+border-top-left-radius: 40%;
+border-top-right-radius: 40%;
+border-bottom-right-radius: 40%;
+border-bottom-left-radius: 40%;
+___________________________________
+CSS3 Border Images 
+border: 15px solid transparent;
+-webkit-border-image: url(border.png) round; /* Safari 3.1-5 */
+-o-border-image: url(border.png) round; /* Opera 11-12.1 */
+-moz-border-image: url(border.png) round; /* mozilla */
+Border-image generator tool
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator
+
+border-image-source: url(border.png);
+border-image-slice: 10%; or 21 15 xx yx
+border-image-width: 17px;
+border-image-outset: 10px;
+border-image-repeat: stretch repeat|round |space /*horizonatl vertical*/
+SHORTHAND:-
+border-image:source: url(border.png); 21 / 15px / 5px round;
+border-image:linear-gradient(to right,red,blue) 25px;
+_______________________________________________________
+CSS3 BACKGROUND
+background-origin:content-box,padding-box,border-box /*where to start*/
+background-clip:content-box,padding-box,border-box,text /*background text*/
+h1{
+	color: transparent;
+	background-image: url(media/image/b.jpg);
+	font-size: 70px;
+                -webkit-background-clip: text;
+}
+____________________________________
+CSS3 GRADIENTS
+linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+(to bottom, to top, to right, to left, to bottom right, etc.).
+linear-gradient(45deg, red,green,blue);  /*angle 90 deg*/
+linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+.........................................
+background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+background-image: radial-gradient(circle, red, yellow, green);
+
+background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); /*60% xx and 55% yx*/
+background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);/*spread nhi hoga*/
+background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black); /*spread hoga*/
+background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%); /*repeating hoga*/
+
+____________________________________
+CSS TEXT SHADOW AND BOX SHADOW
+TEXT SHADOW=syntax:-xx-shadow yx shadow blur-radius color;
+text-shadow: 1px 0 1px black,0 1px black,1px 0 black,0 -1px black; plain border
+text-shadow: 2px 2px 4px #000000;	/*white text black shadow*/
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3); /*simple text*/
+text-shadow: 0px 0px 6px rgba(255,255,255,0.7); /*shine,glowing*/
+.........................
+body { slightly darker shade
+    background: #222;
+}
+ #text h1 {
+color: rgba(0,0,0,0.6);
+text-shadow: 2px 2px 3px rgba(255,255,255,0.1);}
+...........................
+3D TEXT
+color:white;
+text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+...............................
+SOFT EMBOSS TEXT
+color: rgba(0,0,0,0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+__________________________________________
+BOX-SHADOW
+box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5); soft+hard box shadow
+box-shadow: 1px 2px 4px rgba(0,0,0,0.5); hard box shadow
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19); text card/image
+____________________________________________________________	
+CSS3 TEXT PROPERTIES
+text-overflow:clip,ellipsis,string;  /*white-space:nowrap; overflow:hidden;*/
+word-wrap:break-word; /* only long word break and move into next line space problem*/
+word-break:break-all;   /* all long word move next line and space prob solve*/
+writing-mode:horizontal-tb,vertical-rl,vertical-lr; /*change the direction of text*/
+text-align-last:left,right,center,justify,start,end;   /*specify the last line of content*/
+text-justify:inter-word,inter-character; /*EXPERIMENTAL use "chrome://flags"*/
+____________________________________
+CSS3 FONT FACE RULES download font and use
+@font-face{
+src: url("fonts/DancingScript-Regular.ttf");
+src: url("fonts/DancingScript-bold.ttf");	
+font-family: DancingScript;}    /*create your own font family name*/
+_____________________________________
+CSS3 2D TRANSFORMS   
+use prefix for some browsers
+-ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari prior 9.0 */
+
+transform: rotate(20deg); /* Standard syntax */
+transform-origin: left top; /*Allows  the point of move,rotate change the position on transformed elements */
+transform:translate(10% 19px);     /*xx and yx   move element*/
+transform:translateX( 34px);
+transform:translateY(35px);
+transform:rotate(-45deg);        /*roatate any elements to 0 to 360 deg*/
+transform: scale(0.5,1.3)      /*xx increaze size of width multiply yx also*/
+transform:scaleX(2);
+transform: scaleY(2);
+transform:skew(10deg, 10deg);  /**/ 
+transform: skewX( 5deg);
+transform:skewY( 8deg);
+transform: matrix(1, -0.3, 0, 1, 0, 0); /*scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()*/
+___________________________________________
+CSS3 3D Transforms   use prefix for some browsers
+
+transform: perspective(700px) rotateX(-40deg) ;}   \   agge se fallega
+transform:rotateX(190deg) perspective(800px);      \oper se nicche hoga
+
+transform:perspective(800px) rotateY(40deg);   \height wise window ki trah khulega
+transform: rotateY(360deg) perspective(800px);   \left se right hoga
+
+transform-origin: right bottom;
+transform: perspective(800px) rotateY(-360deg) ;  \\another example
+
+transform:rotateZ(50deg);   \ sab tarf se rotate hoga
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ transform: perspective(800px) rotateY(30deg) translateX(100px);
+ transform: perspective(800px) rotateY(30deg) translateY(100px);
+ transform: perspective(800px) rotateY(30deg) translateZ(100px);   /box ke piche se hoga 
+ means move hoga piche se agge ayega 
+
+transform: perspective(800px) rotateY(60deg) translate3d(100px,10px,100px);
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+transform:perspective(800px) scaleX(2)  rotateX(40deg); 
+transform:perspective(800px) scaleY(2)  rotateX(40deg); 
+transform:perspective(800px) scaleZ(2)  rotateX(40deg);  /means agge ki traf ayega
+
+transform:perspective(800px) scale3d(2,2,3)  rotateX(40deg); 
+________________________________________________________
+CSS3 PRESPECTIVE,TRANSFORM-STYLE,BACKFACE VISIBILITY
+
+prespective:800px;
+prespective-origin:top right; /*xx20% yx20%*/
+
+transform-style:flat,preserve-3d;
+transform-origin:bottom;
+
+backface-visibility:hidden;
+_______________________________________
+CSS3 TRANSITIONS
+transition: property duration timing-function delay|initial|inherit;  /*Short Hand*/
+transition:      all          .35s        ease-in-out;      0s
+transition-property: none or all or width;
+transition-duration: 5s;
+transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out;
+transition-timing-function:steps(4,end);
+transition-timing-function:steps(4,start);
+transition-timing-function:steps(6);
+transition-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);
+transition-delay: 2s;
+______________________________________
+CSS3 ANIMATION SHORTHAND
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+animation:  yarr      3s               linear              0s        infinite              alternate   both     running;
+LONG-HAND
+
+animation-name:prince;
+animation-duration:4s; or -4s
+animation-timing-function: linear /ease /ease-in/ease-out/ease-in-out/
+step-start/step-end/steps(6);/steps(6 ,start)/cubic-bezier(0.1,0.5,1.0,0.1);
+animation-delay:2s;
+animation-iteration-count: infinite;
+animation-direction: alternate /*0% to 100% then 100 to 0%*/
+                                    reverse  /*100% to 0 */
+                                   alternate-reverse/*100 to 0 then 100 to 0*/
+
+animation-timing-function: linear /ease /ease-in/ease-out/ease-in-out/
+step-start/step-end/steps(6);/steps(6 ,start) cubic-bezier(0.1,0.5,1.0,0.1);
+
+animation-fill-mode:none
+                               forwards /*normal chalegi end me initial state mein nhi ayega*/
+                               backwards/* delay time ke 0% pe start kr chuka hoga and initial back state me ayega*/
+                               both /*0 % se start kr chuka hoga aur 100% par ruk jayega*/
+
+animation-play-state:paused  or running   /*hover pe animation rokne k liye*/
+RULES OF ANIMATION
+@keyframes prince{
+	0%{border-radius:0%;background-color: darkgrey;}
+	100%{border-radius:50%;background-color: darkgrey;}
+}
+________________________________________________________
+CSS MULTIPLE COLUMNS
+
+column-count: 5;
+column-fill: balance;
+column-gap: 1em;
+column-rule: 4px double #ff0000;
+column-rule-width: medium|thin|thick|1em;
+column-rule-style:solid;
+column-rule-color:#ff0000;
+h2{column-span: none|all; /*select another tag inside same container*/
+column-width: 100px;     /*if columns width use then don't use columns-count*/
+columns: 100px 3;          / *column-width column-count */
+______________________________________________
+CSS3 OBJECT-FIT RESPONSIVE  <img> or <video> 
+Width bhi utni rakhni hai or Height bhi utni rakhni hai...
+
+object-fit: cover;    /*cropping ho ke responsive rahegi height width same hogi*/
+object-fit: contain;   /*height-width utni rahegi crop nhi hogi */
+object-fit: scale-down;    /*same as contain*/
+object-fit: fill;     /*strech skew hoti hai width height same rahegi*/
+object-fit: none;   /*image strech nhi hota */
+object-position:top right bottom left           /*cropping kha se ho left30px top40px*/
+_______________________________________________
+CSS3 CORE CONSEPT PROPERTIES
+
+VARIABLES:-GLOBAL SCOPE FULL WEBSITE ACCESS
+root:{
+--main-color:blue;    /*--Variable create and value*/
+--main-font-family:roboto;
+}
+p{
+color:var(--main-color);   /*Use of variables*/
+}
+......................................
+box-sizing:border-box;
+resize:vertical,horizontal,none,both;
+outline-offset:20px;     /*gap lene k liye border se */
+text-overflow:ellipsis;
+white-space:wrap,no-wrap;
+backface-visibilty:visible , hidden;   /*transform required*/
+transform-style:preserve-3d;
+caret-color:red OR transparent       /form input blink color customize/
+.............................................
+BUTTON RIPPLE EFFECTS
+border caret effects
+#div {
+        width: 0px;
+        height: 0px;
+        border-top: 100px solid transparent;
+        border-left: 100px solid red;                    /*left triangle*/
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid transparent; 
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
