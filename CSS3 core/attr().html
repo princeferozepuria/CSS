@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>attr()</title>
+    <style media="screen">
+    /* https://i.ibb.co/BK4nPjQ/a.jpg   Online Image Link*/
+      p::after{
+        content: attr(class);
+        color:red;
+      }
+      h1:hover::after{
+        content: attr(data-myattributename);
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="test">Testing</p>
+    <h1 data-myattributename="FZR">PRINCE</h1>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="source files">
+    <meta name=keyword content="home,
+    audio,video,images,tables,forms,login">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta name="author" content="prince">
+    <!--<meta name="http-equiv" refresh content="5" url="http://google.com">-->
+    <title>table</title>
+    <style type="text/css">
+		table,th,td{
+			border-spacing: 0px;
+			}
+	</style>
+
+
+
+	<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+	<noscript>Sorry!your browser does not support javascript</noscript>
+
+</head>
+
+<body>
+<h1>this is table example</h1>
+<div>
+<table border="2">
+	<caption>Laptops details</caption>
+    <thead><tr>
+    	<th>laptop</th>
+    	<th>processor</th>
+    	<th>ram</th>
+    	<th>screen</th>
+    </tr></thead>
+
+ <tbody><tr>
+    	<td>lenovo</td>
+    	<td colspan="2">i5</td>
+    	<td rowspan="3">better</td>
+    </tr>
+
+<tr>
+    	<td>acer</td>
+    	<td>i7</td>
+    	<td rowspan="2">8gb</td>
+
+    </tr>
+<tr>
+    	<td colspan="2">apple</td>
+
+  </tr>
+</tbody>
+<tfoot>
+	<tr>
+	<td colspan="4">this is COMPLEX example</td>
+	</tr>
+</tfoot>
+</table></div><br>
+<hr>
+
+
+<h1>Ist Example</h1>
+<center><table width="900" height="600" border="3" cellspacing="4" bordercolor="red">
+    <tr><td colspan="4" height="100"></td></tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr><td colspan="4" height="300"></td></tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </table></center>
+<p>NOTE:bhut sare columns ki width ek columns mein maintain karna chahe toh colspan attribute lagega</p>
+<p>NOTE:colspan ka means yeh ki is  first td ki widh 4 columns ke barabr badh jayegi</p><br>
+<hr>
+<h1>2nd Example</h1>
+<center><table width="1200" height="600" border="4" bordercolor="blue" cellspacing="4">
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+
+</tr>
+
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<p>this is complex example of table in html
+upper side columns and left side columns</p>
+
+</table></center><br>
+
+<h1>3rd Example</h1>
+<center><table width="1200" height="600" border="4" bordercolor="blue" cellspacing="4">
+
+<tr>
+    <td width="200"></td>
+    <td rowspan="8" background="images/g.jpg"></td>
+</tr>
+
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<tr><td></td></tr>
+
+<p>this is rawspan example 8 raws ki height 1 columns mein arrange krne ke liye</p>
+
+</table></center><br>
+<h1>4th Example</h1>
+<table bgcolor="yellow" border="2">
+    <tr>
+        <td>
+            <font face="calibri" size="4" color="red">FIRST NAME</font><br>
+        <input type="text" name="FIRST NAME">
+        </td>
+        <td><font face="calibri" size="4" color="red">LAST NAME</font><br>
+        <input type="text" name="LAST NAME"></td>
+    </tr>
+    <tr>
+        <td><font face="calibri" size="4" color="red">SELECT GENDER</font></td>
+        <td>
+            <input type="radio" name="SELECT GENDER" value="male">male
+            <input type="radio" name="SELECT GENDER" value="female">female
+        </td>
+    </tr>
+
+    <tr>
+        <td><font face="calibri" size="4" color="red">D.O.B</font></td>
+           <td> <input type="date" name="D.O.B"></td>
+    </tr>
+
+    <tr>
+        <td><font face="calibri" size="4" color="red">MOBILE NUMBER</font>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td><font face="calibri" size="4" color="red">FIRST NUMBER</font><br>
+            <input type="number" name="MOBILE NUMBER"></td>
+
+        <td><font face="calibri" size="4" color="red">SECOND NUMBER</font><br>
+            <input type="number" name="MOBILE NUMBER"></td>
+
+    </tr>
+
+    <tr>
+        <td>
+        <font face="calibri" size="4" color="red">ADDRESS</font>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+        <textarea cols="44"></textarea>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+        <font face="calibri" size="4" color="red">EMAIL</font>
+        </td>
+
+            <td colspan="2"><input type="email" name="email"><td>
+
+    </tr>
+
+    <tr>
+        <td>
+        <font face="calibri" size="4" color="red">SELECT SPECIAL COURCES</font>
+        </td>
+        <td>
+            <select>COURCES
+            <option>Ethical Hacking</option>
+            <option>Web developer</option>
+            <option>Bootstrab learning</option>
+            <option>Programming expert</option>
+            <option>penteration tester</option>
+            </select>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td><font face="calibri" size="4" color="red">UPLOAD YOUR MARKSHEET</font>
+            </td>
+        <td>
+        <input type="file" accept=".jpg">
+        </td>
+    </tr>
+
+    <tr>
+        <td><font face="calibri" size="4" color="red"> WARNING-CHECK</font></td>
+        <td>
+            <input type="checkbox" name="accept" value="if all details are corrects">if all details are corrects
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="submit" value="admit now">
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>

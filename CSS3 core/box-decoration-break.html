@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>box-decoration-break</title>
+    <style media="screen">
+      span{
+        font-size: 20px;
+        font-variant: small-caps;
+        border: 2px solid rgba(22, 74, 75, 0.95);
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+        padding: 10px;
+        line-height:50px;
+        background: rgb(18, 149, 162);
+        border-radius: 4px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- these properties we can use
+  border
+background-color
+background-image
+margin
+padding
+clip-path -->
+<span>Lorem ipsum dolor<br> sit amet, consectetur <br> adipisicing <br> elit, sed do<br>  eiusmod <br> tempor inca<br>  deserunt <br> mollit <br> anim id est laborum.</span>
+  </body>
+</html>

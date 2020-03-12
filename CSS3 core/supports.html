@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>@supports</title>
+    <style media="screen">
+    /*agr text-underline-offset supports nhi krta toh ye chale*/
+      @supports not (text-underline-offset:2px) {
+        body{
+          background: orange;
+        }
+      }
+
+
+/*set multiple conditions*/
+      @supports(filter:blur(2px)) or (-webkit-filter:blur(2px)) {
+        body{
+          background: green;
+        }
+      }
+
+     @supports not (text-underline-offset:2px) {
+        body{
+          background: orange;
+        }
+      }
+
+/*check css variables supports or not*/
+      :root{
+        --myvar: blue;
+      }
+      @supports (--myvar:blue){
+        body{
+          background-color: var(--myvar);
+        }
+      }
+    </style>
+  </head>
+  <body>
+<h2>Feature Detection in the browser</h2>
+<h2>check any properties supports or not</h2>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Div table</title>
+    <style media="screen">
+      .divTable {
+        font-family: arial;
+        display: table;
+        width: 70%;
+        height: 200px;
+        padding: 10px;
+        border-collapse: collapse;
+      }
+      .divTableRow {
+        display: table-row;
+      }
+      .divTableHeading {
+        background-color: #eee;
+        color: blue;
+        display: table-header-group;
+      }
+      .divTableCell,
+      .divTableHead {
+        box-sizing: border-box;
+        font-weight: 600;
+        border: 2px solid black;
+        display: table-cell;
+        padding: 18px;
+      }
+      .divTableHeading {
+        display: table-header-group;
+        font-weight: bold;
+      }
+      .divTableFoot {
+        background-color: #EEE;
+        display: table-footer-group;
+        font-weight: bold;
+        color: red;;
+      }
+      .divTableBody {
+        display: table-row-group;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Div Table</h2>
+    <div class="divTable">
+        <div class=" divTableHeading ">
+          <div class="divTableHead">Name</div>
+          <div class="divTableHead">Age</div>
+          <div class="divTableHead">Class</div>
+          <div class="divTableHead">Roll</div>
+        </div>
+
+        <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell">prince</div>
+          <div class="divTableCell">15</div>
+          <div class="divTableCell">10th</div>
+          <div class="divTableCell">101</div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell">rita</div>
+          <div class="divTableCell">16</div>
+          <div class="divTableCell">12th</div>
+          <div class="divTableCell">102</div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell">mina</div>
+          <div class="divTableCell">14</div>
+          <div class="divTableCell">9th</div>
+          <div class="divTableCell">105</div>
+        </div>
+      </div>
+    <div class="divTableFoot">
+      <div class="divTableRow">
+        <div class="divTableCell">Names List</div>
+        <div class="divTableCell">Age List</div>
+        <div class="divTableCell">Class list</div>
+        <div class="divTableCell">Roll List</div>
+      </div>
+      </div>
+
+    </div>
+  </body>
+</html>

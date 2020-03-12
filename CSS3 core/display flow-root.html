@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flow-root</title>
+    <style media="screen">
+      .parent{
+        width:600px;
+        margin: 20px 50px;
+        border: 2px solid black;
+        display: flow-root;
+      }
+   /* .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+   } */
+    .child{
+      width: 100px;
+      height: 100px;
+      background: rgb(163, 148, 10);
+      float: left;
+      margin: 10px;
+       /*ye issue tha*/
+    }
+    </style>
+  </head>
+  <body>
+    <div class="parent clearfix">
+      <div class="child"></div>
+      <h1>no need to use clearfix hack use simple flow root</h1>
+    </div>
+  </body>
+</html>

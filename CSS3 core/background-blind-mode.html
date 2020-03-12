@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>background-blind-mode</title>
+    <style media="screen">
+  .setup{
+  width:350px;
+  height: 350px;
+  border: 2px solid black;
+  margin: 7px;
+  }
+.box{
+  background-image: linear-gradient(to right, red, yellow),url('images/a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode:hue; /*it has many values to impliment*/
+}
+
+</style>
+</head>
+<body>
+<div class="box setup"></div>
+</body>
+</html>

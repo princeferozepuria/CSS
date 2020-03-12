@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>background-blind-mode</title>
+    <style media="screen">
+  .setup{
+  width:350px;
+  height: 350px;
+  border: 2px solid black;
+  margin: 7px;
+  }
+.box2{
+background-image: linear-gradient(to right , red , yellow);
+}
+img{
+  width: 100%;
+  height: 100%;
+  /* mix-blend-mode: color-burn; */
+  }
+.box2 h1{
+color:black;
+font-size: 50px;
+font-variant: small-caps;
+font-weight: 700;
+font-family: fantasy;
+text-align: center;
+margin: -200px auto 0;
+/* mix-blend-mode: color-burn; */
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="box2 setup">
+      <img src="img/a.jpg" alt="">
+      <h1>PRINCE</h1>
+    </div>
+  </body>
+</html>

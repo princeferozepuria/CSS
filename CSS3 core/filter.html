@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>filter</title>
+  </head>
+  <style media="screen">
+img{
+  width:100%;
+  /* filter:blur(3px);*/
+  /* filter: brightness(200%);/* 100% se unlimited*/
+  /* filter: contrast(200%);*/ /*0 % by default*/
+  /* filter:drop-shadow(8px 8px 10px black); */
+  /* filter: grayscale(50%); */ /*0 to 100%*/
+  /* filter: hue-rotate(200deg); */ /*0 - 360 use non negative value */
+  /* filter: invert(100%); */  /*0 - 100%*/
+  /* filter: opacity(50%);  */ /*transparency*/
+  /* filter: saturate(200%); */ /*color ko aur ubarega*/
+  /* filter: sepia(100%); */  /*0 to 100%*/
+  /* filter: none; */  /*remove all filter*/
+  filter:  brightness(200%) grayscale(30%) saturate(150%); /*multiple filters*/
+}
+  </style>
+  <body>
+    <!-- ye image ka effect hai -->
+<img src="img/d1.jpg" alt="filter: /**/">
+  </body>
+</html>

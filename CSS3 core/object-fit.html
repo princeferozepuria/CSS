@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>object-fit</title>
+    <style media="screen">
+    .main{
+      height: 300px;
+      width: 300px;
+      display: inline-block;
+    }
+    img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- ye image ko better responsive krne ke liye use hoti hai -->
+<!-- object fit esme 5 values hoti hai
+cover= ye image responsive dikhaega no streach
+contain = ye puri image dekhaega
+fill = ye sterech kreaga image
+scale-down = ye contain ki hi trah kam krega -->
+<!-- croping set krne k
+object-position : bottom // ab cropping bottom se hogi
+object-position: (30px 50px)  bhi use kr skte hain-->
+
+    <div class="main">
+<img src="a.jpg" alt="">
+      </div>
+
+      <div class="main">
+  <img src="img/a1.jpg" alt="">
+        </div>
+
+        <div class="main">
+    <img src="img/a2.jpg" alt="">
+          </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
++<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+<title>Counter</title>
+<style type="text/css">
+
+
+body{
+	counter-reset: first_counter;
+}
+ul{
+	list-style: none;
+}
+    #list>li::before{
+	content:"Chapter " counter(first_counter);
+	counter-increment: first_counter 1;
+	display: inline-block;
+	color: red;
+	font-size: 24px;
+	}
+#list2{
+	counter-reset: second_counter 0;
+}
+#list2 li::before{
+content: "chapter " counter(first_counter) "." counter(second_counter);
+    counter-increment: second_counter 1;
+	display: inline-block;
+	color: green;
+	font-size: 23px;
+}
+
+#list3{
+	counter-reset: third_counter 0;
+}
+#list3 li::before{
+content: "chapter " counter(first_counter) "." counter(second_counter)"." counter(third_counter);
+    counter-increment: third_counter;
+	display: inline-block;
+	color: blue;
+	font-size: 22px;
+}
+#list5{
+	counter-reset: pink_counter 0;
+}
+#list5 li::before{   /*          6    */
+content: "chapter " counter(first_counter) "." counter(second_counter)"." counter(third_counter) "." counter(pink_counter);
+    counter-increment: pink_counter;
+	display: inline-block;
+	color: deeppink;
+	font-size: 20px;
+}
+
+
+
+
+#list4{
+	counter-reset:grey_counter 0;
+}
+#list4 li::before{
+content: "chapter " counter(first_counter) "." counter(second_counter)"." counter(grey_counter );
+    counter-increment: grey_counter ;
+	display: inline-block;
+	color: darkslategray;
+	font-size: 24px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>LIST ITEM</h2>
+<ul id="list">
+	<li> this is first child</li>
+	<li> this is second child</li>
+	<li> this is third child</li>
+	<li> this is fourth child</li>
+	<li> this is five child</li>
+	<li> this is six child
+       <ul id="list2">
+       	<li>attnested
+            <ul id="list3">
+            	<li>para1</li>
+            	<li>para2</li>
+            	<li>para3</li>
+            	<li>para4
+                    <ul id="list5">
+            	<li>para1</li>
+            	<li>para2</li>
+            	<li>para3</li>
+            	<li>para4</li>
+            	<li>para5</li>
+                             </ul>
+                             </li>
+         <li>para5</li>
+            </ul>
+                 </li>
+        <li>attnested</li>
+        <li>attnested
+             <ul id="list4">
+            	<li>para1</li>
+            	<li>para2</li>
+            	<li>para3</li>
+            	<li>para4</li>
+            	<li>para5</li>
+            </ul>
+
+                   </li>
+        <li>attnested</li>
+       </ul>
+            </li>
+	<li> this is seven child</li>
+	<li> this is eight child</li>
+	<li> this is nine child</li>
+	<li> this is ten child</li>
+</ul>
+
+</body>
+</html>
