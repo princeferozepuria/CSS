@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Grid template</title>
+<style media="screen">
+.grid-container {
+  border: 1px solid black;
+  width: 70%;
+  margin: 40px auto;
+  background: #eee;
+  display: grid;
+  grid-template-rows: repeat(2,140px);
+  grid-template-columns: repeat(3,1fr);
+  /* grid-row-gap: 20px; */
+  /* grid-column-gap: 20px;*/
+   grid-gap:20px 20px;  /*row column */
+   grid-auto-rows: 140px;
+
+}
+
+.grid-container .first {
+  background: tomato;
+  /* grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4; */
+  grid-row: 2 / 5;
+  grid-column: 3 / 4;
+  z-index: 1;
+}
+
+.grid-container .second {
+  background: rgb(206, 220, 125);
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+
+
+}
+
+.grid-container .third {
+  background: DodgerBlue;
+}
+
+.grid-container .fourth {
+  background: MediumSeaGreen;
+}
+
+.grid-container .five {
+  background: SlateBlue;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column: 1 / -1;
+}
+
+.grid-container .six {
+  background: Orange;
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+}
+.grid-container .seven {
+  background: yellow;
+  grid-row: 5 / 6;
+  grid-column: 1 / 4;
+
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="first">div1 z-index:1; ye oper aa gya</div>
+<div class="second">div2 niche chla gya</div>
+<div class="third">div3</div>
+<div class="fourth">div4</div>
+<div class="five">div5</div>
+<div class="six">div6</div>
+<div class="seven">div7</div>
+
+</div>
+</body>
+</html>

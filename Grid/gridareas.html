@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Grid template</title>
+<style media="screen">
+body{
+  margin:0;
+  padding: 0;
+}
+.grid-container {
+  border: 0px solid black;
+  width: 100%;
+  margin: 0px auto;
+  background: #eee;
+  display: grid;
+  grid-template-rows: repeat(2,minmax(100px,min-content));
+  grid-template-columns: repeat(3,1fr);
+  grid-template-areas: "title title title"
+                        "header header header"
+                        "content content sidebar"
+                        " content content sidebar"
+                        "content content sidebar"
+                         "box1  box2  sidebar"
+                         "footer footer footer";
+grid-auto-rows: 100px;
+
+}
+.grid-container .title {
+  background: tomato;
+  grid-area: title;
+}
+
+.grid-container .header {
+  background: rgb(206, 220, 125);
+    grid-area: header;
+
+}
+
+.grid-container .content {
+  background: DodgerBlue;
+    grid-area: content;
+
+}
+
+.grid-container .sidebar {
+  background: MediumSeaGreen;
+    grid-area: sidebar;
+}
+
+.grid-container .box1{
+  background: darkgrey;
+    grid-area: box1;
+}
+.grid-container .box2{
+  background: brown;
+    grid-area: box2;
+}
+
+.grid-container .footer {
+  background: Orange;
+    grid-area: footer;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="title">title Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+<div class="header">header</div>
+<div class="content">content</div>
+<div class="sidebar">sidebar</div>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="footer">footer</div>
+
+</div>
+</body>
+</html>

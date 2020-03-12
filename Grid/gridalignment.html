@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Grid template</title>
+<style media="screen">
+.grid-container {
+  border: 2px solid black;
+  width: 80%;
+  height:500px;
+  margin: 40px auto;
+  background: #eee;
+  display: grid;
+  grid-template-rows: repeat(3,140px);
+  grid-template-columns: repeat(3,20%);
+  grid-gap:13px;
+  /* justify-content:center; /*horizontal alignment control whole grid */
+  /* align-content: space-evenly; */  /*vertical alignment */
+  place-content:center center; /* shorthand first  value vertical and second horizontal*/
+
+
+  /* justify-items:center; */
+  /* align-items:center; */
+   /* place-items: center center; /*shorthand alignmentv items*/
+}
+
+.grid-container .first{
+  background: tomato;
+  justify-self:center;
+  align-self: center;
+  /*place-self:center end;  /*fisrt value vertical and second horizontal*/
+}
+
+.grid-container .second {background: rgb(206, 220, 125);}
+.grid-container .third {background: DodgerBlue;}
+.grid-container .fourth {background: MediumSeaGreen;}
+.grid-container .five {background: SlateBlue;}
+.grid-container .six {background: Orange;}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="first">div1</div>
+<div class="second">div2</div>
+<div class="third">div3</div>
+<div class="fourth">div4</div>
+<div class="five">div5</div>
+<div class="six">div6</div>
+<div class="fourth">div4</div>
+<div class="five">div5</div>
+<div class="six">div6</div>
+
+</div>
+</body>
+</html>

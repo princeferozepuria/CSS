@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>imagegallery</title>
+    <style media="screen">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        height: 100%;
+        width: 100%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-rows: repeat(2,250px);
+        grid-template-columns: repeat(auto-fit,minmax(285px,285px));
+        grid-gap: 10px;
+        grid-auto-rows: 250px;
+        justify-content: center;
+      }
+      .grid-container .first {
+        background: rgb(90, 192, 242);
+      }
+      .grid-container .second {
+        background: rgb(206, 220, 125);
+      }
+      .grid-container .third {
+        background: rgb(147, 14, 113);
+      }
+      .grid-container .fourth {
+        background: MediumSeaGreen;
+      }
+      .grid-container .five {
+        background: rgb(232, 123, 65);
+      }
+      .grid-container .six {
+        background: rgb(182, 150, 12);
+      }
+      .grid-container .seven {
+        background: rgb(226, 27, 147);
+      }
+      .grid-container .eight {
+        background: brown;
+      }
+      .grid-container .nine {
+        background: rgb(52, 119, 81);
+      }
+      .grid-container .ten {
+        background: rgb(251, 249, 24);
+      }
+      .grid-container .ele {
+        background: rgb(110, 104, 100);
+      }
+      .grid-container .twe {
+        background: rgb(40, 12, 26);
+      }
+
+      /*css*/
+      .grid-container .first {
+        position: relative;
+      }
+      .grid-container .first .img-box {
+        position: relative;
+        overflow: hidden;
+      }
+      .grid-container .first .img-box img {
+        width: 100%;
+        height: 250px;
+        transition: transform 2s;
+      }
+      .grid-container .first:hover .img-box img {
+        transform: scale(1.4);
+      }
+      .grid-container .first .details {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, .8);
+        transform: scaleY(0);
+        transition: transform 0.5s;
+      }
+      .grid-container .first:hover .details {
+        transform: scaleY(1);
+      }
+      .grid-container .first .details .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+      }
+      .grid-container .first .details .content h2 {
+        margin-top: -90px;
+        text-align: center;
+        font-size: 20px;
+        color: yellow;
+        font-family: cursive;
+        font-weight: 700;
+      }
+      .grid-container .first .details .content p {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: fantasy;
+        font-variant: small-caps;
+        text-align: center;
+        color: white;
+        margin-top: 12px;
+      }
+
+      .grid-container .second img {
+        width: 100%;
+        height: 250px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="first">
+        <div class="img-box">
+          <img src="media/image/d0.jpg" alt="blank"/>
+        </div>
+          <div class="details">
+          <div class="content">
+            <h2>WAHEGURU</h2>
+            <p>
+              Sukh Wele Sukhrana Dukh Wele Aardaas Har Wele Simran</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="second"></div>
+      <div class="third">image3</div>
+      <div class="fourth">image4</div>
+      <div class="five">image5</div>
+      <div class="six">image6</div>
+      <div class="seven">image7</div>
+      <div class="eight">image8</div>
+      <div class="nine">image9</div>
+      <div class="ten">image10</div>
+      <div class="ele">image11</div>
+      <div class="twe">image12</div>
+
+    </div>
+  </body>
+</html>

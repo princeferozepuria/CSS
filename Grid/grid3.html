@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Grid template</title>
+<style media="screen">
+.grid-container {
+  border: 1px solid black;
+  width: 80%;
+  margin: 40px auto;
+  background: #eee;
+  display: grid;
+  grid-template-rows: repeat(2,140px);  /*2 rows 140px ki*/
+  grid-template-columns: repeat(3,20%); /*3 columns 20% width ke*/
+}
+
+.grid-container .first {
+  background: tomato;
+}
+
+.grid-container .second {
+  background: rgb(206, 220, 125);
+
+}
+
+.grid-container .third {
+  background: DodgerBlue;
+}
+
+.grid-container .fourth {
+  background: MediumSeaGreen;
+}
+
+.grid-container .five {
+  background: SlateBlue;
+}
+
+.grid-container .six {
+  background: Orange;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+<div class="first">div1</div>
+<div class="second">div2</div>
+<div class="third">div3</div>
+<div class="fourth">div4</div>
+<div class="five">div5</div>
+<div class="six">div6</div>
+
+</div>
+</body>
+</html>

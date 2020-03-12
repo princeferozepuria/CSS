@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Advanced image gallery</title>
+<style media="screen">
+.grid-container{
+  display: grid;
+  grid-gap:5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  grid-auto-flow: dense;
+}
+.horizontal{
+grid-column: span 2;
+}
+.vertical{
+ grid-row: span 2;
+}
+.big{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.e{
+  grid-column: span 2;
+  grid-row: span 3;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <!-- responsive all images -->
+  <!-- a indexing start -->
+<div class="vertical"><img src="media/image/a.jpg" alt="normal"></div>
+<div class="vertical"><img src="media/image/a0.jpg" alt="vertical"></div>
+<div><img src="media/image/a1.jpg" alt="vertical"></div>
+<div class="big"><img src="media/image/a2.jpg" alt="big"></div>
+<div ><img src="media/image/a3.jpg" alt="normal"></div>
+<div  class="vertical"><img src="media/image/a4.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/a5.jpg" alt="vertical"></div>
+<div><img src="media/image/a6.jpg" alt="normal"></div>
+<div class="horizontal"><img src="media/image/a7.jpg" alt="horizontal"></div>
+<div class="big" ><img src="media/image/a8.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/a9.jpg" alt="big"></div>
+
+<!-- b indexing start -->
+<div><img src="media/image/b.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/b0.jpg" alt="big"></div>
+<div><img src="media/image/b1.jpg" alt="normal"></div>
+<div><img src="media/image/b2.jpg" alt="normal"></div>
+<div class="vertical"><img src="media/image/b3.jpg" alt="vertical"></div>
+<div><img src="media/image/b4.jpg" alt="normal"></div>
+<div><img src="media/image/b5.jpg" alt="normal"></div>
+<div class="vertical"><img src="media/image/b6.jpg" alt="vertical"></div>
+<div class="horizontal"><img src="media/image/b7.jpg" alt="horizontal"></div>
+<div><img src="media/image/b8.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/b9.jpg" alt="big"></div>
+
+<!-- c indexing start -->
+<div><img src="media/image/c.jpg" alt="normal"></div>
+<div class="horizontal"><img src="media/image/c0.jpg" alt="horizontal"></div>
+<div class="big"><img src="media/image/c1.jpg" alt="big"></div>
+<div class="big"><img src="media/image/c2.jpg" alt="big"></div>
+<div><img src="media/image/c3.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/c4.jpg" alt="big"></div>
+<div><img src="media/image/c5.jpg" alt="normal"></div>
+<div><img src="media/image/c6.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/c7.jpg" alt="big"></div>
+<div class="horizontal" ><img src="media/image/c8.jpg" alt="normal"></div>
+<div><img src="media/image/c9.jpg" alt="normal"></div>
+
+<!-- d indexing start -->
+<div class="vertical"><img src="media/image/d.jpg" alt="vertical"></div>
+<div><img src="media/image/d0.jpg" alt="normal"></div>
+<div><img src="media/image/d1.jpg" alt="normal"></div>
+<div class="horizontal"><img src="media/image/d3.jpg" alt="horizontal"></div>
+<div><img src="media/image/d4.jpg" alt="normal"></div>
+<div><img src="media/image/d5.jpg" alt="normal"></div>
+<div><img src="media/image/d6.jpg" alt="normal"></div>
+<div><img src="media/image/d7.jpg" alt="normal"></div>
+<div class="horizontal"><img src="media/image/d8.jpg" alt="vertical"></div>
+<div class="horizontal"><img src="media/image/d9.jpg" alt="horizontal"></div>
+
+<!-- e indexing start -->
+<div class="big e"><img src="media/image/e.jpg" alt="vertical"></div>
+<div><img src="media/image/e0.jpg" alt="normal"></div>
+<div><img src="media/image/e1.jpg" alt="normal"></div>
+<div><img src="media/image/e2.jpg" alt="normal"></div>
+<div class="big"><img src="media/image/e6.jpg" alt="horizontal"></div>
+<div><img src="media/image/e7.jpg" alt="normal"></div>
+<div><img src="media/image/e8.jpg" alt="normal"></div>
+<div><img src="media/image/e9.jpg" alt="normal"></div>
+
+<!-- f indexing start -->
+<div><img src="media/image/f.jpg" alt="normal"></div>
+<div><img src="media/image/f0.jpg" alt="normal"></div>
+<div><img src="media/image/f1.jpg" alt="normal"></div>
+<div><img src="media/image/f2.jpg" alt="normal"></div>
+
+</div>
+</body>
+</html>
