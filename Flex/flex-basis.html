@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex-direction</title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+     main{
+       width:90%;
+       border:2px solid black;
+       background:rgb(164, 189, 149);
+       margin: 10px;
+       display:flex;
+       flex-flow: row wrap;
+      }
+
+      .items{
+        margin: 5px;
+        padding: 5px;
+        width:100px;
+        height:30px;
+        /* flex-grow:1; ab min-width ki trah kam krega */
+        /* nhi ton max-width ki trah kam krega */
+      }
+
+     .item1{background-color:red;flex-basis:150px;}
+      .item2{background:blue; flex-basis:200px;}
+       .item3{background:green; flex-basis:100px;}
+          .item4{background:yellow; flex-basis:250px;}
+         .item5{background:brown; flex-basis:189px;}
+          .item6{background:pink; flex-basis:70px;}
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+<div class="item1 items">red</div>
+<div class="item2 items">blue</div>
+<div class="item3 items">green</div>
+<div class="item4 items">yellow</div>
+<div class="item5 items">brown</div>
+<div class="item6 items">pink</div>
+    </main>
+
+  </body>
+</html>

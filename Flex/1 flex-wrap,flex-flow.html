@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex-direction</title>
+    <style media="screen">
+     main{
+       height:300px;
+       display:flex;
+       /* flex-direction: column;
+       flex-wrap:wrap; */
+       flex-flow: column wrap; /*short hand flex-direction flex-wrap*/
+       margin: 10px;
+       border:2px solid black;
+
+     }
+
+     .item1{background-color:red;}
+      .item2{background:blue;}
+       .item3{background:green;}
+        .item4{background:yellow;}
+         .item5{background:brown;}
+          .item6{background:pink;}
+
+          .items{
+            margin: 5px;
+            padding: 10px;}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="item1 items">red</div>
+        <div class="item2 items">blue</div>
+        <div class="item3 items">green</div>
+          <div class="item3 items">green</div>
+            <div class="item4 items">yellow</div>
+              <div class="item5 items">brown</div>
+                <div class="item6 items">pink</div>
+    </main>
+
+  </body>
+</html>

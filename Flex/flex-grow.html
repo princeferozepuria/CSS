@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex-grow</title>
+    <style media="screen">
+     main{
+       border:2px solid black;
+       background:rgb(164, 189, 149);
+       margin: 10px;
+       width: 90%;
+       display:flex;
+       flex-flow: row wrap;
+      }
+
+      .items{
+        margin: 5px;
+        padding: 5px;
+        width:100px;
+        height:30px;
+        flex-grow:1;
+      }
+
+     .item1{background-color:red;}
+      .item2{background:blue;  flex-grow:3;}
+       .item3{background:green;}
+        .item4{background:yellow;flex-grow:5;}
+         .item5{background:brown;}
+          .item6{background:pink;}
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="item1 items">red</div>
+        <div class="item2 items">blue</div>
+        <div class="item3 items">green</div>
+          <div class="item3 items">green</div>
+            <div class="item4 items">yellow</div>
+              <div class="item5 items">brown</div>
+                <div class="item6 items">pink</div>
+    </main>
+
+  </body>
+</html>

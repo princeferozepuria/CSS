@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex-direction</title>
+    <style>
+
+     main{
+       width:90%;
+       border:2px solid black;
+       background:rgb(164, 189, 149);
+       margin: 10px;
+       display: flex;
+       flex-flow: row wrap;
+      }
+
+      .items{
+        margin: 5px;
+        padding: 5px;
+        width: 100px;
+        height: 30px;
+      }
+
+        /* flex-shrink: 0;*/  /*means items shtrink krni hai ya nhi*/
+        /* responsive karna hai ya nhi */
+        /* flex: 0 0 auto;  //shorthand grow shrink basis */
+.item1 {background-color:red;
+       flex-shrink: 4;
+       } /*basis pr shrink kam nhi krega data overflow hoga*/
+      .item2{background:blue;}
+       .item3{background:green;}
+        .item4{background:yellow; }
+         .item5{background:brown; }
+          .item6{background:pink; }
+  </style>
+  </head>
+  <body>
+    <main>
+<div class="item1 items">red</div>
+<div class="item2 items">blue</div>
+<div class="item3 items">green</div>
+<div class="item4 items">yellow</div>
+<div class="item5 items">brown</div>
+<div class="item6 items">pink</div>
+    </main>
+
+  </body>
+</html>

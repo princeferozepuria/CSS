@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex-direction</title>
+    <style media="screen">
+     main{
+       border:2px solid black;
+       display:flex;
+       flex-direction: column;
+       margin: 10px;}
+
+     .item1{background-color:red;}
+      .item2{background:blue;}
+       .item3{background:green;
+          display:flex;}
+        .item4{background:yellow;}
+
+          .items{
+            margin: 5px;
+            padding: 5px;}
+
+          .item3 .subitems{
+            background: rgb(220, 225, 226);
+            flex-grow:1;
+            margin:5px;
+
+          }
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="item1 items">red</div>
+        <div class="item2 items">blue</div>
+
+          <div class="item3 items">
+            <div class="sub1 subitems">nested1</div>
+            <div class="sub2 subitems">nested2</div>
+            <div class="sub2 subitems">nested3</div>
+          </div>
+
+            <div class="item4 items">yellow</div>
+
+    </main>
+
+  </body>
+</html>

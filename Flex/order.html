@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>order</title>
+    <style media="screen">
+     main{
+       border:2px solid black;
+       background:rgb(164, 189, 149);
+       display:flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       flex-flow: row wrap;
+       margin: 10px;
+     }
+
+     .item1{background-color:red; order:3;}
+      .item2{background:blue; order:-1;}
+       .item3{background:green; order:-2;}
+        .item4{background:yellow;order:2;}
+         .item5{background:brown; order:-3;}
+          .item6{background:pink; order:1;}
+
+          .items{
+            margin: 5px;
+            padding: 20px;
+          }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="item1 items">red</div>
+        <div class="item2 items">blue</div>
+        <div class="item3 items">green</div>
+          <div class="item4 items">yellow</div>
+              <div class="item5 items">brown</div>
+                <div class="item6 items">pink</div>
+    </main>
+
+  </body>
+</html>
